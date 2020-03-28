@@ -786,6 +786,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2546252851075571783, guid: 51c9703bace1d5a49af51f46ab62bf80,
         type: 3}
+    - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: _characterObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 1887442363026401607, guid: 4796b1dbba39d864ca16fc0e060c88bf,
+        type: 3}
     - target: {fileID: 8478884754606119421, guid: da0d4aab4e551d94e9339f2a8bc20401,
         type: 3}
       propertyPath: _sceneNameToLoad

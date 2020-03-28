@@ -7,12 +7,7 @@ public class PunchHitDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform.parent != transform.root && other.CompareTag("hitbox")) 
+        if(other.transform.parent != transform.root && other.CompareTag("hitbox") && !other.transform.root.CompareTag(transform.root.tag)) 
             OnHit?.Invoke(other.transform.root.gameObject, transform.root.forward);
-    }
-
-    private void Update()
-    {
-        Debug.DrawLine(transform.root.position, transform.root.forward * 100, Color.yellow);
     }
 }
