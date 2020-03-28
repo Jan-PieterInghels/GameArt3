@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -780,6 +780,11 @@ PrefabInstance:
       propertyPath: _player2RefSpawnpoint
       value: 
       objectReference: {fileID: 1369516933}
+    - target: {fileID: 8478884754606119421, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: _sceneNameToLoad
+      value: Arena_Scene
+      objectReference: {fileID: 0}
     - target: {fileID: 8648296630129270893, guid: da0d4aab4e551d94e9339f2a8bc20401,
         type: 3}
       propertyPath: m_AnchorMax.y

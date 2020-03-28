@@ -937,7 +937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132c3beed0512af43a892a88e187cc56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterStats: {fileID: 11400000, guid: 8e986ee398ad42b4d9cfd213e598d0ed, type: 2}
+  _characterStats: {fileID: 11400000, guid: b1724d10800e6c14eac52213f5c2aa27, type: 2}
   _animController: {fileID: 1898005241110518709}
   _attackTriggers:
   - {fileID: 615281256289819923}
