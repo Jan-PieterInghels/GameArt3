@@ -802,7 +802,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _characterObjects.Array.data[3]
       value: 
-      objectReference: {fileID: 2546252851075571783, guid: 83f4910bedce60849a2bd98ea775056b,
+      objectReference: {fileID: 7990527500251310905, guid: 2ed5b23088d0f404683db77946bb9c39,
         type: 3}
     - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
         type: 3}
