@@ -798,6 +798,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2546252851075571783, guid: 6c3414ccf0c106d47a343761efd6236a,
         type: 3}
+    - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: _characterObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 2546252851075571783, guid: 83f4910bedce60849a2bd98ea775056b,
+        type: 3}
+    - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: _characterObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 2546252851075571783, guid: 83f4910bedce60849a2bd98ea775056b,
+        type: 3}
+    - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: _characterObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 2546252851075571783, guid: 83f4910bedce60849a2bd98ea775056b,
+        type: 3}
     - target: {fileID: 8478884754606119421, guid: da0d4aab4e551d94e9339f2a8bc20401,
         type: 3}
       propertyPath: _sceneNameToLoad
