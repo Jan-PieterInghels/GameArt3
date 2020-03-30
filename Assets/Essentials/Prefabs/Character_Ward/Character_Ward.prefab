@@ -2295,7 +2295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterStats: {fileID: 11400000, guid: b1724d10800e6c14eac52213f5c2aa27, type: 2}
-  _animController: {fileID: 4879181360370145757}
+  _animController: {fileID: 6593038959954461832}
   _attackTriggers:
   - {fileID: 1103472112427063348}
   - {fileID: 8533228188822588527}
