@@ -1220,6 +1220,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1
       objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
 --- !u!4 &85846572 stripped
@@ -1347,6 +1352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
@@ -3600,6 +3610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2305423041422564306, guid: ecb17ab879478094fa4ee1381ab59465,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3001046423034194369, guid: ecb17ab879478094fa4ee1381ab59465,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4458,6 +4473,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock3
       objectReference: {fileID: 0}
+    - target: {fileID: 1439313640503406996, guid: 5cd594905a3accc4eac87b734af01d25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2711767282064982919, guid: 5cd594905a3accc4eac87b734af01d25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4777,6 +4797,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
 --- !u!4 &474794895 stripped
@@ -4976,6 +5001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439313640503406996, guid: 5cd594905a3accc4eac87b734af01d25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2711767282064982919, guid: 5cd594905a3accc4eac87b734af01d25,
         type: 3}
@@ -6062,6 +6092,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2305423041422564306, guid: ecb17ab879478094fa4ee1381ab59465,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3001046423034194369, guid: ecb17ab879478094fa4ee1381ab59465,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6608,6 +6643,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
@@ -7281,6 +7321,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2305423041422564306, guid: ecb17ab879478094fa4ee1381ab59465,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3001046423034194369, guid: ecb17ab879478094fa4ee1381ab59465,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7844,6 +7889,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
@@ -8815,6 +8865,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
@@ -10555,6 +10610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1439313640503406996, guid: 5cd594905a3accc4eac87b734af01d25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2711767282064982919, guid: 5cd594905a3accc4eac87b734af01d25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12076,6 +12136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1439313640503406996, guid: 5cd594905a3accc4eac87b734af01d25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2711767282064982919, guid: 5cd594905a3accc4eac87b734af01d25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12234,6 +12299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305423041422564306, guid: ecb17ab879478094fa4ee1381ab59465,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3001046423034194369, guid: ecb17ab879478094fa4ee1381ab59465,
         type: 3}
@@ -12579,6 +12649,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
@@ -13188,6 +13263,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2305423041422564306, guid: ecb17ab879478094fa4ee1381ab59465,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3001046423034194369, guid: ecb17ab879478094fa4ee1381ab59465,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13618,6 +13698,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
 --- !u!4 &1428069950 stripped
@@ -13707,6 +13792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
@@ -13817,6 +13907,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305423041422564306, guid: ecb17ab879478094fa4ee1381ab59465,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3001046423034194369, guid: ecb17ab879478094fa4ee1381ab59465,
         type: 3}
@@ -13983,6 +14078,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
 --- !u!4 &1457160370 stripped
@@ -14077,6 +14177,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
@@ -14358,6 +14463,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
@@ -14746,6 +14856,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
 --- !u!4 &1524074705 stripped
@@ -14930,6 +15045,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
@@ -15778,6 +15898,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305423041422564306, guid: ecb17ab879478094fa4ee1381ab59465,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3001046423034194369, guid: ecb17ab879478094fa4ee1381ab59465,
         type: 3}
@@ -17054,6 +17179,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2305423041422564306, guid: ecb17ab879478094fa4ee1381ab59465,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3001046423034194369, guid: ecb17ab879478094fa4ee1381ab59465,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17316,6 +17446,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
@@ -19675,6 +19810,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
 --- !u!4 &1993651347 stripped
@@ -19764,6 +19904,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
@@ -20353,6 +20498,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3523693375672634373, guid: 6e0a93e6c398ebe4dac77b699d27042f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0a93e6c398ebe4dac77b699d27042f, type: 3}
 --- !u!4 &2077393286 stripped
@@ -20468,6 +20618,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439313640503406996, guid: 5cd594905a3accc4eac87b734af01d25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2711767282064982919, guid: 5cd594905a3accc4eac87b734af01d25,
         type: 3}
