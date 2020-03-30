@@ -13,6 +13,10 @@ public class TriggerActions : MonoBehaviour
         _playerBeh.IsDamageDone = false;
         _playerBeh.IsAttacking = false;
         _playerBeh.IsBlocking = false;
+        _playerBeh.CantMove = false;
+
+        if(_playerBeh.CanBlock)
+            StartCoroutine(_playerBeh.TimeTillBlock());
     }
 
     public void SetBlocking()

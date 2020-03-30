@@ -28,6 +28,10 @@ public class PlayerBehaviour : MonoBehaviour
     public bool IsAttacking { get => _isAttacking; set { _isAttacking = value; } }
     private bool _isBlocking = false;
     public bool IsBlocking { get => _isBlocking; set { _isBlocking = value; } }
+    private bool _cantMove = false;
+    public bool CantMove { get => _cantMove; set { _cantMove = value; } }
+    private bool _canBlock = true;
+    public bool CanBlock => _canBlock;
 
     public event EventHandler OnChangeCurrentHealth;
 
@@ -35,7 +39,6 @@ public class PlayerBehaviour : MonoBehaviour
     private Vector3 _direction;
 
     private string _horizontalAxis, _normalAttackButton, _heavyAttackButton, _blockButton;
-    private bool _canBlock = true;
     private bool _hasInitialized = false;
     private float _doDamageValue = 0;
 
@@ -74,22 +77,24 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (_hasInitialized && GameController.IsGamePlaying)
         {
-            if (Input.GetButtonDown(_normalAttackButton) && !_isAttacking)
+            if (Input.GetButtonDown(_normalAttackButton) && !_cantMove)
             {
                 _animController.SetTrigger("FastAttack");
                 _doDamageValue = _characterStats.NormalAttackDamage;
                 _isAttacking = true;
+                _cantMove = true;
             }
-            if (Input.GetButtonDown(_heavyAttackButton) && !_isAttacking)
+            if (Input.GetButtonDown(_heavyAttackButton) && !_cantMove)
             {
                 _animController.SetTrigger("HeavyAttack");
                 _doDamageValue = _characterStats.HeavyAttackDamage;
                 _isAttacking = true;
+                _cantMove = true;
             }
-            if(Input.GetButtonDown(_blockButton) && !_isAttacking && _canBlock)
+            if(Input.GetButtonDown(_blockButton) && !_cantMove && _canBlock)
             {
                 _animController.SetTrigger("IsBlocking");
-                StartCoroutine(TimeTillBlock());
+                _cantMove = true;
             }
             _direction = new Vector3(Input.GetAxis(_horizontalAxis), 0, 0);
 
@@ -111,7 +116,7 @@ public class PlayerBehaviour : MonoBehaviour
         StartCoroutine(GameController.GoToCharacterSelectScreen());
     }
 
-    private IEnumerator TimeTillBlock()
+    public IEnumerator TimeTillBlock()
     {
         _canBlock = false;
         yield return new WaitForSeconds(_characterStats.TimeUntilNextBlock);
@@ -163,7 +168,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (_hasInitialized && GameController.IsGamePlaying)
         {
-            if (!_isAttacking)
+            if (!_cantMove)
             {
                 WalkAndIdle();
             }
