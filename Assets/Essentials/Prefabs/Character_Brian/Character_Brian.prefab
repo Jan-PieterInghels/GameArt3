@@ -805,7 +805,7 @@ CharacterController:
   m_StepOffset: 0
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.64, z: 0}
+  m_Center: {x: 0, y: 0.6, z: 0}
 --- !u!1 &2561492630917996902
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1efbfe7ba0e45fc48b0388bab81f8483, type: 3}
-  m_Name: Character_Jan-Pieter
+  m_Name: Ward_Stats
   m_EditorClassIdentifier: 
-  _health: 300
-  _normalAttackDamage: 15
-  _heavyAttackDamage: 30
-  _characterSpeed: 1
+  _health: 205.2
+  _normalAttackDamage: 24.2
+  _heavyAttackDamage: 50
+  _characterSpeed: 2
   _timeUntilNextBlock: 2
-  _defence: 50
+  _defence: 11
