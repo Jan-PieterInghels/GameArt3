@@ -32,7 +32,6 @@ public class PlayerBehaviour : MonoBehaviour
     public event EventHandler OnChangeCurrentHealth;
 
     private CharacterController _characterController;
-    private GameController _gameController;
     private Vector3 _direction;
 
     private string _horizontalAxis, _normalAttackButton, _heavyAttackButton, _blockButton;
@@ -64,7 +63,6 @@ public class PlayerBehaviour : MonoBehaviour
         }
 
         _characterController = GetComponent<CharacterController>();
-        _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
 
         _screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         _objectWidth = GetComponent<Collider>().bounds.size.x;
@@ -74,7 +72,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Update()
     {
-        if (_hasInitialized && _gameController.IsGamePlaying)
+        if (_hasInitialized && GameController.IsGamePlaying)
         {
             if (Input.GetButtonDown(_normalAttackButton) && !_isAttacking)
             {
@@ -109,7 +107,8 @@ public class PlayerBehaviour : MonoBehaviour
     private void TriggerFightEnd()
     {
         _animController.SetTrigger("HasFainted");
-        _gameController.IsGamePlaying = false;
+        GameController.ChangeGameState(false);
+        StartCoroutine(GameController.GoToCharacterSelectScreen());
     }
 
     private IEnumerator TimeTillBlock()
@@ -162,14 +161,14 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_hasInitialized && _gameController.IsGamePlaying)
+        if (_hasInitialized && GameController.IsGamePlaying)
         {
             if (!_isAttacking)
             {
                 WalkAndIdle();
             }
         }
-        if(_hasInitialized && !_gameController.IsGamePlaying) _animController.SetFloat("WalkSpeed", 0);
+        if(_hasInitialized && !GameController.IsGamePlaying) _animController.SetFloat("WalkSpeed", 0);
     }
 
     private void WalkAndIdle()

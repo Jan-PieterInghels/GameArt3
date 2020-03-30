@@ -4,17 +4,14 @@ public class GetCharacter : MonoBehaviour
 {
     [Range(1, 2)] [SerializeField] private int _playerNumber = 1;
 
-    private GameController _controller;
-
     // Start is called before the first frame update
     void Start()
     {
-        _controller = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         DestroyAllChildobjects();
 
-        if (_controller.PlayerCharacter[_playerNumber] != null)
+        if (GameController.PlayerCharacter[_playerNumber] != null)
         {
-            GameObject go = Instantiate(_controller.PlayerCharacter[_playerNumber], transform);
+            GameObject go = Instantiate(GameController.PlayerCharacter[_playerNumber], transform);
             PlayerBehaviour beh = go.GetComponent<PlayerBehaviour>();
             beh.PlayerNumber = _playerNumber;
             beh.Initialize();

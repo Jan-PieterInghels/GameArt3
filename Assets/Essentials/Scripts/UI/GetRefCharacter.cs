@@ -2,15 +2,14 @@
 
 public class GetRefCharacter : MonoBehaviour
 {
-    [SerializeField] private GameController _controller;
     [Range(1,2)] [SerializeField] int _playerNumber;
 
     public void ChangeCharacter()
     {
         DestroyAllChildobjects();
 
-        if(_controller.PlayerCharacter[_playerNumber] != null)
-            Instantiate(_controller.PlayerCharacter[_playerNumber], transform);
+        if(GameController.PlayerCharacter[_playerNumber] != null)
+            Instantiate(GameController.PlayerCharacter[_playerNumber], transform);
     }
 
     private void DestroyAllChildobjects()

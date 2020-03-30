@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -9,11 +11,11 @@ public class GameController : MonoBehaviour
     private int _characterAmount;
     public int CharacterAmount { get => _characterAmount; set { _characterAmount = value; } }
 
-    private Dictionary<int, GameObject> _playerCharacter;
-    public Dictionary<int, GameObject> PlayerCharacter { get => _playerCharacter; set { _playerCharacter = value; } }
+    private static Dictionary<int, GameObject> _playerCharacter;
+    public static Dictionary<int, GameObject> PlayerCharacter { get => _playerCharacter; set { _playerCharacter = value; } }
 
-    private bool _isGamePlaying = true;
-    public bool IsGamePlaying { get => _isGamePlaying; set { _isGamePlaying = value; } }
+    private static bool _isGamePlaying = true;
+    public static bool IsGamePlaying { get => _isGamePlaying; set { _isGamePlaying = value; } }
 
     private void Awake()
     {
@@ -40,5 +42,22 @@ public class GameController : MonoBehaviour
         {
             _playerCharacter.Add(i, null);
         }
-    }    
+    }     
+    
+    public static void ChangeGameState(bool gamePlaying)
+    {
+        if (gamePlaying) SceneManager.LoadScene("Arena_Scene");
+        _isGamePlaying = gamePlaying;
+    }
+
+    public static IEnumerator GoToCharacterSelectScreen()
+    {
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("CharacterSelection_Scene");
+    }
+
+    public static void ChangeLockedInCharacter(int playerNumber, GameObject character)
+    {
+        _playerCharacter[playerNumber] = character;
+    }
 }

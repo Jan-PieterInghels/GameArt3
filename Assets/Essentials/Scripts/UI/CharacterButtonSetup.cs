@@ -75,14 +75,14 @@ public class CharacterButtonSetup : MonoBehaviour
 
     public void ChangePlayerCharacter(int i, GameObject go)
     {
-        _gameController.PlayerCharacter[i] = go;
+        GameController.ChangeLockedInCharacter(i, go);
 
         foreach (var playerRef in _playerRefs)
         {
             playerRef.ChangeCharacter();
         }
 
-        PlayerBehaviour beh = _gameController.PlayerCharacter[i]?.GetComponent<PlayerBehaviour>();
+        PlayerBehaviour beh = GameController.PlayerCharacter[i]?.GetComponent<PlayerBehaviour>();
         if(beh != null)
         {
             if(i == 1)

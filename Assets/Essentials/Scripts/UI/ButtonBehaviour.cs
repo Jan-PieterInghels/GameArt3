@@ -50,6 +50,8 @@ public class ButtonBehaviour : MonoBehaviour
     public void SetSceneInSelectScreen(string sceneName)
     {
         if (_characterSetup.IsLockedIn)
-            SceneManager.LoadScene(sceneName);
+        {
+            GameController.ChangeGameState(true);
+        }
     }
 }
