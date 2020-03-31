@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonBehaviour : MonoBehaviour
@@ -10,44 +9,70 @@ public class ButtonBehaviour : MonoBehaviour
     [SerializeField] private CharacterButtonSetup _characterSetup;
     public CharacterButtonSetup CharacterSetup { get => _characterSetup; set { _characterSetup = value; } }
 
-    private int _characterNumber;
-    public int CharacterNumber 
+    private Sprite _characterSprite;
+    public Sprite CharacterSprite 
     { 
-        get => _characterNumber; 
+        get => _characterSprite; 
         set 
-        { _characterNumber = value;
-            _text.text = "Character " + _characterNumber;
+        {
+            _characterSprite = value;
+            _image.sprite = value;
         } 
     }
 
-    [SerializeField] private Text _text;
-    [SerializeField] private bool _isCharacterSelectButton, _isSceneChangingButton;
-    [SerializeField] private string _sceneNameToLoad;
-
-    public ButtonBehaviour(GameObject characterObject, CharacterButtonSetup characterSetup, int characterNumber)
-    {
-        _characterObject = characterObject;
-        _characterSetup = characterSetup;
-        _characterNumber = characterNumber;
-    }
+    [SerializeField] private Image _image;
 
     public void ChangeCharacter(int playerNumber)
     {
-        _characterSetup.ChangePlayerCharacter(playerNumber, _characterObject);
 
-        if (playerNumber == 1) _characterSetup.IsPlayer1LockedIn = true;
-        else if (playerNumber == 2) _characterSetup.IsPlayer2LockedIn = true;
+        if (playerNumber == 1 && !_characterSetup.IsPlayer1LockedIn)
+        {
+            _characterSetup.ChangePlayerCharacter(playerNumber, _characterObject);
+            CharacterSetup.ChangeText("Player 2 you need to lock in");
+            _characterSetup.IsPlayer1LockedIn = true;
+        }
+        else if (playerNumber == 2 && !_characterSetup.IsPlayer2LockedIn)
+        {
+            _characterSetup.ChangePlayerCharacter(playerNumber, _characterObject);
+            CharacterSetup.ChangeText("Player 1 you need to lock in");
+            _characterSetup.IsPlayer2LockedIn = true;
+        }        
 
-        if (_characterSetup.IsPlayer1LockedIn && _characterSetup.IsPlayer2LockedIn) _characterSetup.IsLockedIn = true;
+        if (_characterSetup.IsPlayer1LockedIn && _characterSetup.IsPlayer2LockedIn)
+        {
+            CharacterSetup.ChangeText("Press Start to start game");
+            _characterSetup.IsLockedIn = true; 
+        }
+    }
+
+    public void Deselect(int playerNumber)
+    {
+        _characterSetup.ChangePlayerCharacter(playerNumber, null);
+
+        if (playerNumber == 1)
+        {
+            CharacterSetup.ChangeText("Player 1 you need to lock in");
+            _characterSetup.IsPlayer1LockedIn = false;
+        }
+        else if (playerNumber == 2)
+        {
+            CharacterSetup.ChangeText("Player 2 you need to lock in");
+            _characterSetup.IsPlayer2LockedIn = false;
+        }
+
+        if (_characterSetup.IsPlayer1LockedIn && _characterSetup.IsPlayer2LockedIn)
+        {
+            _characterSetup.IsLockedIn = false;
+        }
+        if (!_characterSetup.IsPlayer1LockedIn && !_characterSetup.IsPlayer2LockedIn) CharacterSetup.ChangeText("Lock in your characters");
     }
 
     public void TaskOnClick(int playerNumber)
     {
-        if (_isSceneChangingButton) SetSceneInSelectScreen(_sceneNameToLoad);
-        else if (_isCharacterSelectButton) ChangeCharacter(playerNumber);
+        ChangeCharacter(playerNumber);
     }
 
-    public void SetSceneInSelectScreen(string sceneName)
+    public void SetSceneInSelectScreen()
     {
         if (_characterSetup.IsLockedIn)
         {

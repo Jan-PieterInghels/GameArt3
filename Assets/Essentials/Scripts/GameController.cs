@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    [Range(1, 2)] [SerializeField] private int _playerAmount = 2;
-    public int PlayerAmount { get => _playerAmount; set { _playerAmount = value; } }
+    [Range(1, 2)] [SerializeField] private static int _playerAmount = 2;
+    public static int PlayerAmount { get => _playerAmount; set { _playerAmount = value; } }
 
-    private int _characterAmount;
-    public int CharacterAmount { get => _characterAmount; set { _characterAmount = value; } }
+    private static int _characterAmount;
+    public static int CharacterAmount { get => _characterAmount; set { _characterAmount = value; } }
 
     private static Dictionary<int, GameObject> _playerCharacter;
     public static Dictionary<int, GameObject> PlayerCharacter { get => _playerCharacter; set { _playerCharacter = value; } }

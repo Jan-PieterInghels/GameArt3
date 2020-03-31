@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1efbfe7ba0e45fc48b0388bab81f8483, type: 3}
   m_Name: JP_Stats
   m_EditorClassIdentifier: 
+  _playerPortret: {fileID: -6223844146392332124, guid: 788faced8b64b214a9fa9329bd4f0fa8,
+    type: 3}
+  _characterName: JP
   _health: 250
   _normalAttackDamage: 25
   _heavyAttackDamage: 100

@@ -3,7 +3,8 @@ using UnityEngine.UI;
 
 public class ChangeStats : MonoBehaviour
 {
-    [SerializeField] Text _healthText, _defenceText, _normalAttText, _heavyAttText, _speedText;
+    [SerializeField] private Text _healthText, _defenceText, _normalAttText, _heavyAttText, _speedText, _nameText;
+    public Text NameText { get => _nameText; set { _nameText = value; } }
 
     private float _healthstat;
     [SerializeField] private Slider _healthSlider;

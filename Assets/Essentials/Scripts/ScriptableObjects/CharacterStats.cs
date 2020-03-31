@@ -6,7 +6,7 @@ public class CharacterStats : ScriptableObject
 {
     [Header("Looks")]
     [SerializeField] private Sprite _playerPortret;
-    public Sprite PlayerPortret => _playerPortret;
+    public Sprite CharacterPortret => _playerPortret;
     [SerializeField] private string _characterName;
     public string CharacterName => _characterName;
 

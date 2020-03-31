@@ -39,8 +39,8 @@ public class GUIController : MonoBehaviour
         _player2PB.OnChangeCurrentHealth += ChangePlayerHealthbar;
 
         //looks
-        PortretPlayer1.sprite = _player1PB.PlayerStats.PlayerPortret;
-        PortretPlayer2.sprite = _player2PB.PlayerStats.PlayerPortret;
+        PortretPlayer1.sprite = _player1PB.PlayerStats.CharacterPortret;
+        PortretPlayer2.sprite = _player2PB.PlayerStats.CharacterPortret;
 
         NamePlayer1.text = _player1PB.PlayerStats.CharacterName;
         NamePlayer2.text = _player2PB.PlayerStats.CharacterName;
