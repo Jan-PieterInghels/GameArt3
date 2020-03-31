@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1efbfe7ba0e45fc48b0388bab81f8483, type: 3}
   m_Name: Ward_Stats
   m_EditorClassIdentifier: 
+  _playerPortret: {fileID: -8781179232458620545, guid: 788faced8b64b214a9fa9329bd4f0fa8,
+    type: 3}
+  _characterName: Ward
   _health: 205.2
   _normalAttackDamage: 24.2
   _heavyAttackDamage: 50

@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1efbfe7ba0e45fc48b0388bab81f8483, type: 3}
   m_Name: Andres_Stats
   m_EditorClassIdentifier: 
+  _playerPortret: {fileID: -6416453916838878400, guid: 788faced8b64b214a9fa9329bd4f0fa8,
+    type: 3}
+  _characterName: Pablito
   _health: 280
   _normalAttackDamage: 29.1
   _heavyAttackDamage: 66.4

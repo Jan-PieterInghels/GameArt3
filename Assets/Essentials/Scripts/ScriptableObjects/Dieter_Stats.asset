@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1efbfe7ba0e45fc48b0388bab81f8483, type: 3}
   m_Name: Dieter_Stats
   m_EditorClassIdentifier: 
+  _playerPortret: {fileID: 4795392165956598984, guid: 788faced8b64b214a9fa9329bd4f0fa8,
+    type: 3}
+  _characterName: PIETer
   _health: 222.7
   _normalAttackDamage: 23.7
   _heavyAttackDamage: 49.4

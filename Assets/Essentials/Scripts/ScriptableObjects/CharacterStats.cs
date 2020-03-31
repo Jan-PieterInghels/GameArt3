@@ -4,6 +4,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CharacterData", menuName = "ScriptableObjects/CharacterStats", order = 1)]
 public class CharacterStats : ScriptableObject
 {
+    [Header("Looks")]
+    [SerializeField] private Sprite _playerPortret;
+    public Sprite PlayerPortret => _playerPortret;
+    [SerializeField] private string _characterName;
+    public string CharacterName => _characterName;
+
+    [Header("Stats")]
     [Range(150, 400)] [SerializeField] private float _health;
     public float Health => _health;
     [Range(15, 50)] [SerializeField] private float _normalAttackDamage;
@@ -14,7 +21,6 @@ public class CharacterStats : ScriptableObject
     public float CharacterSpeed => _characterSpeed;
     [Range(1f, 7.5f)] [SerializeField] private float _timeUntilNextBlock = 2f;
     public float TimeUntilNextBlock => _timeUntilNextBlock;
-
     [Range(1, 50)] [SerializeField] private int _defence = 1;
     public int Defence => _defence; 
 
