@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6341954358575705548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5876664354941680693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeSpine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5130872351052835591}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 6453709942343332423}
   - component: {fileID: 1387180304808860364}
   - component: {fileID: 7184345951120486255}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HitTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5404283851345810995}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4153677478964764363}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLeg1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3801565609742385148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7177054873260696959}
   - component: {fileID: 814951918122341447}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Object041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,7 +391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 375604883312007032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4564726736287799603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4711358012231438633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,7 +484,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 469848236414163895}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegCollarbone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 985019514194393632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegPalm 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4519409620377166932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLeg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3229046627718801379}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +615,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 492393377563137472}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ GameObject:
   - component: {fileID: 5637021331020087680}
   - component: {fileID: 8124425375827659917}
   - component: {fileID: 1820286483408636042}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HitTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -706,7 +706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8607255523096380811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApePelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 4704044681836456874}
   - component: {fileID: -6918922868045644418}
   - component: {fileID: 263737585072459160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Character_Brian
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -816,7 +816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2856470923654656947}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -847,7 +847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3088890553223996331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegPalm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,7 +877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9111635959070324076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegPalm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -907,7 +907,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9025786092329217489}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 8057433677190943411}
   - component: {fileID: 8378420695219503867}
   - component: {fileID: 2661340705823628449}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HitBox
   m_TagString: hitbox
   m_Icon: {fileID: 0}
@@ -1000,7 +1000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6187557443108051084}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: InstantiationPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1032,7 +1032,7 @@ GameObject:
   - component: {fileID: 4219842949982395753}
   - component: {fileID: 1080022048742192182}
   - component: {fileID: 3374919881716741019}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HitBox
   m_TagString: hitbox
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 885883518394836615}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLeg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1123,7 +1123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6692566001743190121}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeNeck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1154,7 +1154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 803702571626195435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1185,7 +1185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3565268874572382386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1215,7 +1215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6470329480777982390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1246,7 +1246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5746596163321096565}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1277,7 +1277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7159065591592970654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLeg2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1309,7 +1309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6435531516603053079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLeg2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1340,7 +1340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2123426104083939011}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1370,7 +1370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7491484602565142471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1400,7 +1400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2002509135313077143}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1431,7 +1431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6610004083011137970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegPalm 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1466,7 +1466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 383707168902730649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: InstantiationPointFloatingPoints
   m_TagString: Untagged
   m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
@@ -1496,7 +1496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1466998183662971326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1527,7 +1527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 330388759092002361}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLeg1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,7 +1558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5484135363993534364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1588,7 +1588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4960383434499585527}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1619,7 +1619,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8521101124047330775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1650,7 +1650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5695055149737764266}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1681,7 +1681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2677282328249642029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1712,7 +1712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6711639003277031178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1743,7 +1743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4201969791348239186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRibcage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1777,7 +1777,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2575724636392831157}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1807,7 +1807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4157225161232284349}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1837,7 +1837,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8583295765188582365}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1868,7 +1868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1863265354583992068}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1899,7 +1899,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1289932149656842722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1929,7 +1929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3308552732905542387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1959,7 +1959,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8411907420929015392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegDigit01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1992,7 +1992,7 @@ GameObject:
   - component: {fileID: 5489412273195739870}
   - component: {fileID: 1554327171728100653}
   - component: {fileID: 7733615911478316592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Character_Brian
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2056,7 +2056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6171923602098518877}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeRLegCollarbone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2087,7 +2087,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1503139455610615471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ApeLLegDigit53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2119,7 +2119,7 @@ GameObject:
   - component: {fileID: 1219043382444645215}
   - component: {fileID: 1890361070387229779}
   - component: {fileID: 5257801951721280199}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HitBox
   m_TagString: hitbox
   m_Icon: {fileID: 0}
@@ -2180,6 +2180,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DustParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2674408597226079432, guid: 26d5dbf4f2b637f479d5276b281abae2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5276695252158678588, guid: 26d5dbf4f2b637f479d5276b281abae2,
         type: 3}

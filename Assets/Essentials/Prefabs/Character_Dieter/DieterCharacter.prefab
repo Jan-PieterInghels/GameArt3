@@ -1194,6 +1194,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DustParticle
       objectReference: {fileID: 0}
+    - target: {fileID: 2674408597226079432, guid: 26d5dbf4f2b637f479d5276b281abae2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5276695252158678588, guid: 26d5dbf4f2b637f479d5276b281abae2,
         type: 3}
       propertyPath: m_LocalPosition.x
