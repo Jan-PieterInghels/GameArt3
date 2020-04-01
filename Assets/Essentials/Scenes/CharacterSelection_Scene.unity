@@ -426,7 +426,7 @@ MonoBehaviour:
   _player2RefSpawnpoint: {fileID: 1369516933}
   _text: {fileID: 1693940486}
   IsLockedIn: 0
-  IsPlayer1LockedIn: 0
+  IsPlayer1LockedIn: 1
   IsPlayer2LockedIn: 0
 --- !u!114 &799111644
 MonoBehaviour:
