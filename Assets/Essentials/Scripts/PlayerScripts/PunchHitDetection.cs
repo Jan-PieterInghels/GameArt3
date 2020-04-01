@@ -11,7 +11,7 @@ public class PunchHitDetection : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.parent != transform.root && other.CompareTag("hitbox") && !other.transform.root.CompareTag(transform.root.tag))
-        { 
+        {
             OnHit?.Invoke(other.transform.root.gameObject, transform.root.forward);
             GameObject obj = Instantiate(_particle, _instantiationPointParticles);
             obj.transform.position = _instantiationPointParticles.transform.position;
