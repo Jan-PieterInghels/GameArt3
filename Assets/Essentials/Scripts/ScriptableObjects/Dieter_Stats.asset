@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerPortret: {fileID: 4795392165956598984, guid: 788faced8b64b214a9fa9329bd4f0fa8,
     type: 3}
-  _characterName: PIETer
-  _health: 222.7
-  _normalAttackDamage: 23.7
-  _heavyAttackDamage: 49.4
-  _characterSpeed: 1.125
+  _characterName: Billy
+  _health: 190
+  _normalAttackDamage: 20
+  _heavyAttackDamage: 65
+  _characterSpeed: 1.6
   _timeUntilNextBlock: 2
   _defence: 15
