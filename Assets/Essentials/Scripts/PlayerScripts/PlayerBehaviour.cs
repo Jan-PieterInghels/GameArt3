@@ -151,10 +151,10 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void CheckCameraShakeAmount(float resultDamage)
     {
-        if (resultDamage < 25) CameraShake(2, 10, 0.25f, .25f);
-        else if(resultDamage < 50f) CameraShake(2.75f, 12, 0.15f, .35f);
-        else if (resultDamage < 75f) CameraShake(3.2f, 12.5f, 0.15f, .45f);
-        else CameraShake(3.5f, 15, 0.10f, .50f);
+        if (resultDamage < 25) CameraShake(5, 10, 0.25f, .25f);
+        else if(resultDamage < 50f) CameraShake(7f, 12, 0.15f, .35f);
+        else if (resultDamage < 75f) CameraShake(8f, 12.5f, 0.15f, .45f);
+        else CameraShake(10f, 15, 0.10f, .50f);
     }
 
     private static void CameraShake(float impact, float roughness, float fadeInTime, float fadeOutTime)
