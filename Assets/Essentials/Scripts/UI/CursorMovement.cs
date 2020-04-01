@@ -7,6 +7,8 @@ public class CursorMovement : MonoBehaviour
     [SerializeField] private float _cursorSpeed;
     [SerializeField] private LayerMask _checkLayer;
     [SerializeField] private Image _image;
+    [SerializeField] private CharacterButtonSetup _characterButtonSetup;
+    [SerializeField] private Renderer _rend;
 
     private string _horizontalAxis, _verticalAxis, _interactButton;
     private float _objectHeight, _objectWidth;
@@ -23,7 +25,8 @@ public class CursorMovement : MonoBehaviour
         _verticalAxis = "Player" + _playerNumber + "_VerticalAxis";
         _interactButton = "Player" + _playerNumber + "_AButton";
 
-        _screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+        _screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        //_screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         _objectHeight = _image.sprite.bounds.size.y;
         _objectWidth = _image.sprite.bounds.size.x;
     }
@@ -38,7 +41,7 @@ public class CursorMovement : MonoBehaviour
 
     private void RaycastCheck()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.position + Vector3.forward, Mathf.Infinity, _checkLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, Mathf.Infinity, _checkLayer);
 
         if (hit.collider != null) 
         {
@@ -48,6 +51,14 @@ public class CursorMovement : MonoBehaviour
     }
 
     void FixedUpdate()
+    {
+        if (_playerNumber == 1 && !_characterButtonSetup.IsPlayer1LockedIn)
+            Move();
+        if (_playerNumber == 2 && !_characterButtonSetup.IsPlayer2LockedIn)
+            Move();
+    }
+
+    private void Move()
     {
         transform.position += _direction * _cursorSpeed * Time.deltaTime;
     }
@@ -62,10 +73,10 @@ public class CursorMovement : MonoBehaviour
         Vector3 viewPos = transform.position;
         viewPos = new Vector3
         (
-            FloatClamp(viewPos.x, _screenBounds.x + _objectWidth, -(_screenBounds.x + _objectWidth)),
-            FloatClamp(viewPos.y, _screenBounds.y + _objectHeight, ((699.5f/100) - _objectHeight)),
+            FloatClamp(viewPos.x, -2f, 2f),
+            FloatClamp(viewPos.y, -1.1f, 1.1f),
             viewPos.z
-        );
+        ); 
 
 
         transform.position = viewPos;

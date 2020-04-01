@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: 0}
+  m_AnchoredPosition: {x: -143.1, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &19704041
@@ -171,11 +171,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerNumber: 1
-  _cursorSpeed: 10
+  _cursorSpeed: 5
   _checkLayer:
     serializedVersion: 2
     m_Bits: 256
   _image: {fileID: 1132464884}
+  _characterButtonSetup: {fileID: 799111643}
+  _rend: {fileID: 0}
 --- !u!114 &110239237 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8478884754606119419, guid: da0d4aab4e551d94e9339f2a8bc20401,
@@ -240,7 +242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 0}
+  m_AnchoredPosition: {x: 169.4, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &483535858
@@ -256,11 +258,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerNumber: 2
-  _cursorSpeed: 10
+  _cursorSpeed: 5
   _checkLayer:
     serializedVersion: 2
     m_Bits: 256
   _image: {fileID: 827566216}
+  _characterButtonSetup: {fileID: 799111643}
+  _rend: {fileID: 0}
 --- !u!1 &606176384
 GameObject:
   m_ObjectHideFlags: 0
