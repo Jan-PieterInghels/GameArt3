@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CharacterButtonSetup : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class CharacterButtonSetup : MonoBehaviour
     public GameObject Player1RefSpawnpoint => _player1RefSpawnpoint;
     [SerializeField] private GameObject _player2RefSpawnpoint;
     public GameObject Player2RefSpawnpoint => _player2RefSpawnpoint;
-    [SerializeField] private Text _text;
+    [SerializeField] private TextMeshProUGUI _text;
 
     private int _characterAmount;
 
@@ -37,7 +38,7 @@ public class CharacterButtonSetup : MonoBehaviour
         GameController.CharacterAmount = _characterObjects.Length;
         _characterAmount = GameController.CharacterAmount;
         _playerAmount = GameController.PlayerAmount;
-        _text.text = "Lock in your characters";
+        _text.text = "Choose character's";
 
         _player1Stats.gameObject.SetActive(false);
         _player2Stats.gameObject.SetActive(false);

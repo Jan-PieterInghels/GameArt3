@@ -28,19 +28,19 @@ public class ButtonBehaviour : MonoBehaviour
         if (playerNumber == 1 && !_characterSetup.IsPlayer1LockedIn)
         {
             _characterSetup.ChangePlayerCharacter(playerNumber, _characterObject);
-            CharacterSetup.ChangeText("Player 2 you need to lock in");
+            CharacterSetup.ChangeText("Player 2  choose your character");
             _characterSetup.IsPlayer1LockedIn = true;
         }
         else if (playerNumber == 2 && !_characterSetup.IsPlayer2LockedIn)
         {
             _characterSetup.ChangePlayerCharacter(playerNumber, _characterObject);
-            CharacterSetup.ChangeText("Player 1 you need to lock in");
+            CharacterSetup.ChangeText("Player 1 choose your character");
             _characterSetup.IsPlayer2LockedIn = true;
         }        
 
         if (_characterSetup.IsPlayer1LockedIn && _characterSetup.IsPlayer2LockedIn)
         {
-            CharacterSetup.ChangeText("Press Start to start game");
+            CharacterSetup.ChangeText("Press Start to play");
             _characterSetup.IsLockedIn = true; 
         }
     }
@@ -51,12 +51,12 @@ public class ButtonBehaviour : MonoBehaviour
 
         if (playerNumber == 1)
         {
-            CharacterSetup.ChangeText("Player 1 you need to lock in");
+            CharacterSetup.ChangeText("Player 1 choose your character");
             _characterSetup.IsPlayer1LockedIn = false;
         }
         else if (playerNumber == 2)
         {
-            CharacterSetup.ChangeText("Player 2 you need to lock in");
+            CharacterSetup.ChangeText("Player 2 choose your character");
             _characterSetup.IsPlayer2LockedIn = false;
         }
 
@@ -64,7 +64,7 @@ public class ButtonBehaviour : MonoBehaviour
         {
             _characterSetup.IsLockedIn = false;
         }
-        if (!_characterSetup.IsPlayer1LockedIn && !_characterSetup.IsPlayer2LockedIn) CharacterSetup.ChangeText("Lock in your characters");
+        if (!_characterSetup.IsPlayer1LockedIn && !_characterSetup.IsPlayer2LockedIn) CharacterSetup.ChangeText("Choose your character");
     }
 
     public void TaskOnClick(int playerNumber)
