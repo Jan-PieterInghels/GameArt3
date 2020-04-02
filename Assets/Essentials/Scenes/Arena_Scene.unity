@@ -7482,7 +7482,6 @@ GameObject:
   - component: {fileID: 711847832}
   - component: {fileID: 711847831}
   - component: {fileID: 711847830}
-  - component: {fileID: 711847829}
   m_Layer: 0
   m_Name: mist
   m_TagString: Untagged
@@ -7490,20 +7489,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &711847829
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711847828}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &711847830
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7559,7 +7544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711847828}
   m_LocalRotation: {x: -0, y: -0.29051292, z: -0, w: 0.9568711}
-  m_LocalPosition: {x: 5.83, y: 0.13, z: 2.41}
+  m_LocalPosition: {x: 5.83, y: 0.082, z: 2.41}
   m_LocalScale: {x: 0.825065, y: 0.825065, z: 0.825065}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12030,7 +12015,6 @@ GameObject:
   - component: {fileID: 1148610328}
   - component: {fileID: 1148610327}
   - component: {fileID: 1148610326}
-  - component: {fileID: 1148610325}
   m_Layer: 0
   m_Name: mist
   m_TagString: Untagged
@@ -12038,20 +12022,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1148610325
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148610324}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1148610326
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12107,7 +12077,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148610324}
   m_LocalRotation: {x: -0, y: -0.83944, z: -0, w: 0.5434524}
-  m_LocalPosition: {x: -4.89, y: 0.13, z: 1.71}
+  m_LocalPosition: {x: -4.89, y: 0.082, z: 1.71}
   m_LocalScale: {x: 0.825065, y: 0.825065, z: 0.825065}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14010,7 +13980,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 4.6, y: 0}
+  m_AnchoredPosition: {x: 4.5999985, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1377301008
@@ -23514,7 +23484,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 4.3, y: 0}
+  m_AnchoredPosition: {x: 4.300003, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2978617561273361397
