@@ -30,7 +30,7 @@ ScriptedImporter:
         scale: {x: 0.4, y: 0.4}
         offset: {x: 0, y: 0}
       - name: _BumpMap
-        texture: {fileID: 3904157650475733506, guid: 1e29ad61b774ada4ab63716ceba36d58,
+        texture: {fileID: 3904157650475733506, guid: 048f34af70d3fcb4db2c902d33dbb99a,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -39,22 +39,22 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MainTex
-        texture: {fileID: 5721057500706870076, guid: 1e29ad61b774ada4ab63716ceba36d58,
+        texture: {fileID: 5721057500706870076, guid: 048f34af70d3fcb4db2c902d33dbb99a,
           type: 3}
         scale: {x: 0.4, y: 0.4}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
-        texture: {fileID: -5332329006011277808, guid: 1e29ad61b774ada4ab63716ceba36d58,
+        texture: {fileID: -5332329006011277808, guid: 048f34af70d3fcb4db2c902d33dbb99a,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _OcclusionMap
-        texture: {fileID: -4103488929555093536, guid: 1e29ad61b774ada4ab63716ceba36d58,
+        texture: {fileID: -4103488929555093536, guid: 048f34af70d3fcb4db2c902d33dbb99a,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _SpecGlossMap
-        texture: {fileID: -9222828813323352973, guid: 1e29ad61b774ada4ab63716ceba36d58,
+        texture: {fileID: -9222828813323352973, guid: 048f34af70d3fcb4db2c902d33dbb99a,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -286,11 +286,11 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    material: {fileID: 7580940122526908561, guid: 1e29ad61b774ada4ab63716ceba36d58,
+    material: {fileID: 7580940122526908561, guid: 048f34af70d3fcb4db2c902d33dbb99a,
       type: 3}
     generatedTextures:
-    - {fileID: 5721057500706870076, guid: 1e29ad61b774ada4ab63716ceba36d58, type: 3}
-    - {fileID: 3904157650475733506, guid: 1e29ad61b774ada4ab63716ceba36d58, type: 3}
-    - {fileID: -9222828813323352973, guid: 1e29ad61b774ada4ab63716ceba36d58, type: 3}
-    - {fileID: -5332329006011277808, guid: 1e29ad61b774ada4ab63716ceba36d58, type: 3}
-    - {fileID: -4103488929555093536, guid: 1e29ad61b774ada4ab63716ceba36d58, type: 3}
+    - {fileID: 5721057500706870076, guid: 048f34af70d3fcb4db2c902d33dbb99a, type: 3}
+    - {fileID: 3904157650475733506, guid: 048f34af70d3fcb4db2c902d33dbb99a, type: 3}
+    - {fileID: -9222828813323352973, guid: 048f34af70d3fcb4db2c902d33dbb99a, type: 3}
+    - {fileID: -5332329006011277808, guid: 048f34af70d3fcb4db2c902d33dbb99a, type: 3}
+    - {fileID: -4103488929555093536, guid: 048f34af70d3fcb4db2c902d33dbb99a, type: 3}

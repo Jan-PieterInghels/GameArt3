@@ -97,23 +97,25 @@ public class CharacterButtonSetup : MonoBehaviour
         {
             if(i == 1 && !IsPlayer1LockedIn)
             {
-                _player1Stats.HealthStats = beh.PlayerStats.Health;
-                _player1Stats.DefenceStats = beh.PlayerStats.Defence;
-                _player1Stats.NormalAttackStats = beh.PlayerStats.NormalAttackDamage;
-                _player1Stats.HeavyAttackStats = beh.PlayerStats.HeavyAttackDamage;
-                _player1Stats.SpeedStats = beh.PlayerStats.CharacterSpeed;
-                _player1Stats.NameText.text = beh.PlayerStats.CharacterName;
+                ChangeStats(_player1Stats, beh.PlayerStats.Health, beh.PlayerStats.Defence, beh.PlayerStats.NormalAttackDamage, beh.PlayerStats.HeavyAttackDamage,
+                    beh.PlayerStats.CharacterSpeed, beh.PlayerStats.CharacterName);
             }
             else if(i == 2 && !IsPlayer2LockedIn)
             {
-                _player2Stats.HealthStats = beh.PlayerStats.Health;
-                _player2Stats.DefenceStats = beh.PlayerStats.Defence;
-                _player2Stats.NormalAttackStats = beh.PlayerStats.NormalAttackDamage;
-                _player2Stats.HeavyAttackStats = beh.PlayerStats.HeavyAttackDamage;
-                _player2Stats.SpeedStats = beh.PlayerStats.CharacterSpeed;
-                _player2Stats.NameText.text = beh.PlayerStats.CharacterName;
+                ChangeStats(_player2Stats, beh.PlayerStats.Health, beh.PlayerStats.Defence, beh.PlayerStats.NormalAttackDamage, beh.PlayerStats.HeavyAttackDamage,
+                    beh.PlayerStats.CharacterSpeed, beh.PlayerStats.CharacterName);
             }
         }
+    }
+
+    private void ChangeStats(ChangeStats _stats, float health, float Defence, float normalAtt, float heavyAtt, float speed, string name)
+    {
+        _stats.HealthStats = health;
+        _stats.DefenceStats = Defence;
+        _stats.NormalAttackStats = normalAtt;
+        _stats.HeavyAttackStats = heavyAtt;
+        _stats.SpeedStats = speed;
+        _stats.NameText.text = name;
     }
 
     private void Update()
@@ -147,6 +149,15 @@ public class CharacterButtonSetup : MonoBehaviour
         foreach (var button in _buttonList)
         {
             button.Deselect(playerNumber);
+        }
+
+        if (playerNumber == 1)
+        {
+            ChangeStats(_player1Stats, 0,0,0,0,0, "Select character");
+        }
+        else if (playerNumber == 2)
+        {
+            ChangeStats(_player2Stats, 0, 0, 0, 0, 0, "Select character");
         }
     }
        
