@@ -15,11 +15,11 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 1, g: 1, b: 1, a: 1}
-  m_FogMode: 1
-  m_FogDensity: 0.02
+  m_FogColor: {r: 0.60784316, g: 0.94117653, b: 0.93725497, a: 1}
+  m_FogMode: 2
+  m_FogDensity: 0.009
   m_LinearFogStart: 30
-  m_LinearFogEnd: 50
+  m_LinearFogEnd: 148.40999
   m_AmbientSkyColor: {r: 0.754717, g: 0.32395872, b: 0.74214023, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
@@ -7561,7 +7561,7 @@ GameObject:
   - component: {fileID: 711847830}
   - component: {fileID: 711847829}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: mist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12156,7 +12156,7 @@ GameObject:
   - component: {fileID: 1148610326}
   - component: {fileID: 1148610325}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: mist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
