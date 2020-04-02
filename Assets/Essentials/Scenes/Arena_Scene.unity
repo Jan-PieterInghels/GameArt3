@@ -9812,13 +9812,13 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 8381806686602943477, guid: 8b6196c6cc0fdf740a90b745bce61201,
     type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 2
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &959940584
@@ -22239,13 +22239,13 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 8381806686602943477, guid: 8b6196c6cc0fdf740a90b745bce61201,
     type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 2
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &2102850109
@@ -22550,6 +22550,9 @@ MonoBehaviour:
   _healthbarPlayer2: {fileID: 2136815329}
   _DefencebarPlayer1: {fileID: 2978617559405332623}
   _DefencebarPlayer2: {fileID: 1508889015}
+  _defenceImageP1: {fileID: 2102850108}
+  _defenceImageP2: {fileID: 959940583}
+  _timeDevider: 2
   PortretPlayer1: {fileID: 2978617561125145144}
   PortretPlayer2: {fileID: 593278010}
   NamePlayer1: {fileID: 2978617559505322976}

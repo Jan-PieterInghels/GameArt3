@@ -19,5 +19,5 @@ MonoBehaviour:
   _normalAttackDamage: 25
   _heavyAttackDamage: 50
   _characterSpeed: 1.2
-  _timeUntilNextBlock: 2
+  _timeUntilNextBlock: 4
   _defence: 25

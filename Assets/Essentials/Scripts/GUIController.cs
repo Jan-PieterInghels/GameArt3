@@ -9,8 +9,13 @@ public class GUIController : MonoBehaviour
     //stats
     [SerializeField] private Slider _healthbarPlayer1;
     [SerializeField] private Slider _healthbarPlayer2;
+
     [SerializeField] private Slider _DefencebarPlayer1;
     [SerializeField] private Slider _DefencebarPlayer2;
+    [SerializeField] private Image _defenceImageP1, _defenceImageP2;
+
+    [Range(1, 10)] [SerializeField] private float _timeDevider = 5;
+
     public Image PortretPlayer1;
     public Image PortretPlayer2;
     public TextMeshProUGUI NamePlayer1;
@@ -59,23 +64,24 @@ public class GUIController : MonoBehaviour
 
     private void Cooldown2(object sender, EventArgs e)
     {
-        _DefencebarPlayer2.value = 0;
-        StartCoroutine(ChangeDefenceBar(_DefencebarPlayer2));
+        StartCoroutine(ChangeDefenceBar(_DefencebarPlayer2, _defenceImageP2));
     }
 
-    private IEnumerator ChangeDefenceBar(Slider defencebar)
+    private IEnumerator ChangeDefenceBar(Slider defencebar, Image image)
     {
-        for (int i = 0; i < defencebar.maxValue; i++)
+        defencebar.value = 0;
+        image.fillAmount = 0;
+        for (int i = 0; i < (defencebar.maxValue * _timeDevider); i++)
         {
-            yield return new WaitForSeconds(1);
-            defencebar.value += 1;
+            yield return new WaitForSeconds(1f / _timeDevider);
+            defencebar.value += 1f / _timeDevider;
+            image.fillAmount += 1f / (_timeDevider * defencebar.maxValue);
         }
     }
 
     private void Cooldown(object sender, EventArgs e)
     {
-        _DefencebarPlayer1.value = 0;
-        StartCoroutine(ChangeDefenceBar(_DefencebarPlayer1));
+        StartCoroutine(ChangeDefenceBar(_DefencebarPlayer1, _defenceImageP1));
     }
 
     private void ChangePlayerHealthbar(object sender, EventArgs e)
