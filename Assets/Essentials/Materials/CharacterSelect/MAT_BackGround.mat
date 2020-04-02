@@ -96,8 +96,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_1DE39A01: {r: 0.6039216, g: 0.8352942, b: 1, a: 1}
-    - Color_BF74F2BA: {r: 0.20392159, g: 0.42352945, b: 0.5686275, a: 1}
+    - Color_1DE39A01: {r: 0.75294125, g: 0.98823535, b: 0.50980395, a: 1}
+    - Color_BF74F2BA: {r: 0.20392156, g: 0.42352942, b: 0.5686274, a: 1}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

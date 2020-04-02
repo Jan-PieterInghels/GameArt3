@@ -3,7 +3,19 @@ guid: dc0f1e17041dc8e4f9d7cf541a4e5987
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Purpel
+    second: {fileID: 7580940122526908561, guid: d96f7da403ea13140a7edfa80ad81c8d,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SwimmingTiere
+    second: {fileID: 7580940122526908561, guid: ee1ba0ae6bef49a41b5ee5f50cdf31b5,
+      type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
