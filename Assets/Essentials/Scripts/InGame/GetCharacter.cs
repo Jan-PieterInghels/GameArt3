@@ -11,6 +11,7 @@ public class GetCharacter : MonoBehaviour
 
         if (GameController.PlayerCharacter[_playerNumber] != null)
         {
+            GameController.PlayerCharacter[_playerNumber].transform.localScale = new Vector3(1, 1, 1);
             GameObject go = Instantiate(GameController.PlayerCharacter[_playerNumber], transform);
             PlayerBehaviour beh = go.GetComponent<PlayerBehaviour>();
             beh.PlayerNumber = _playerNumber;

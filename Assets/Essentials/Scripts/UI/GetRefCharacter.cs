@@ -9,7 +9,7 @@ public class GetRefCharacter : MonoBehaviour
         DestroyAllChildobjects();
 
         if(GameController.PlayerCharacter[_playerNumber] != null)
-            Instantiate(GameController.PlayerCharacter[_playerNumber], transform);
+            InstatiatePrefab(GameController.PlayerCharacter[_playerNumber]);
     }
 
     private void DestroyAllChildobjects()
@@ -23,5 +23,25 @@ public class GetRefCharacter : MonoBehaviour
         {
             Destroy(child);
         }
+    }
+
+    private void InstatiatePrefab(GameObject obj)
+    {
+        GameObject spawnObj = obj;
+        Transform spawnPos;
+        spawnPos = transform;
+
+        if (obj != null)
+        {
+            spawnPos.position = new Vector3(spawnPos.position.x, -3.5f, spawnPos.position.z);
+            spawnObj.transform.localScale = new Vector3(1, 1, 1);
+
+            if (spawnObj.name == "Character_Brian")
+            {
+                spawnObj.transform.localScale /= 1.5f;
+                spawnPos.position = new Vector3(spawnPos.position.x, spawnPos.position.y + 1, spawnPos.position.z);
+            }
+        }
+        Instantiate(spawnObj, spawnPos);
     }
 }
