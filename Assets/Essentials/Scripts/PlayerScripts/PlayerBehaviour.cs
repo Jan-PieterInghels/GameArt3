@@ -147,8 +147,6 @@ public class PlayerBehaviour : MonoBehaviour
             OnChangeCurrentHealth?.Invoke(this, EventArgs.Empty);
 
             impact += direction * force / _characterStats.Defence;
-         
-            Debug.Log($"Player{_playerNumber} impact value = {impact}");
         }
     }
 
