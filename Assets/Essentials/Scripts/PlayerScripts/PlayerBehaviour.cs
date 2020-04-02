@@ -35,6 +35,7 @@ public class PlayerBehaviour : MonoBehaviour
     public bool CanBlock => _canBlock;
 
     public event EventHandler OnChangeCurrentHealth;
+    public event EventHandler OnDefenceCooldown;
 
     private CharacterController _characterController;
     private Vector3 _direction;
@@ -96,6 +97,7 @@ public class PlayerBehaviour : MonoBehaviour
             {
                 _animController.SetTrigger("IsBlocking");
                 _cantMove = true;
+                _canBlock = false;
             }
             _direction = new Vector3(Input.GetAxis(_horizontalAxis), 0, 0);
 
@@ -119,6 +121,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     public IEnumerator TimeTillBlock()
     {
+        OnDefenceCooldown?.Invoke(this, EventArgs.Empty);
         _canBlock = false;
         yield return new WaitForSeconds(_characterStats.TimeUntilNextBlock);
         _canBlock = true;

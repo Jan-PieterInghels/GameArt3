@@ -9,6 +9,8 @@ public class GUIController : MonoBehaviour
     //stats
     [SerializeField] private Slider _healthbarPlayer1;
     [SerializeField] private Slider _healthbarPlayer2;
+    [SerializeField] private Slider _DefencebarPlayer1;
+    [SerializeField] private Slider _DefencebarPlayer2;
     public Image PortretPlayer1;
     public Image PortretPlayer2;
     public TextMeshProUGUI NamePlayer1;
@@ -35,8 +37,17 @@ public class GUIController : MonoBehaviour
         _healthbarPlayer1.value = _healthbarPlayer1.maxValue;
         _healthbarPlayer2.value = _healthbarPlayer2.maxValue;
 
+        _DefencebarPlayer1.maxValue = _player1PB.PlayerStats.TimeUntilNextBlock;
+        _DefencebarPlayer2.maxValue = _player2PB.PlayerStats.TimeUntilNextBlock;
+
+        _DefencebarPlayer1.value = _DefencebarPlayer1.maxValue;
+        _DefencebarPlayer2.value = _DefencebarPlayer2.maxValue;
+
         _player1PB.OnChangeCurrentHealth += ChangePlayerHealthbar;
         _player2PB.OnChangeCurrentHealth += ChangePlayerHealthbar;
+
+        _player1PB.OnDefenceCooldown += Cooldown;
+        _player2PB.OnDefenceCooldown += Cooldown2;
 
         //looks
         PortretPlayer1.sprite = _player1PB.PlayerStats.CharacterPortret;
@@ -44,6 +55,27 @@ public class GUIController : MonoBehaviour
 
         NamePlayer1.text = _player1PB.PlayerStats.CharacterName;
         NamePlayer2.text = _player2PB.PlayerStats.CharacterName;
+    }
+
+    private void Cooldown2(object sender, EventArgs e)
+    {
+        _DefencebarPlayer2.value = 0;
+        StartCoroutine(ChangeDefenceBar(_DefencebarPlayer2));
+    }
+
+    private IEnumerator ChangeDefenceBar(Slider defencebar)
+    {
+        for (int i = 0; i < defencebar.maxValue; i++)
+        {
+            yield return new WaitForSeconds(1);
+            defencebar.value += 1;
+        }
+    }
+
+    private void Cooldown(object sender, EventArgs e)
+    {
+        _DefencebarPlayer1.value = 0;
+        StartCoroutine(ChangeDefenceBar(_DefencebarPlayer1));
     }
 
     private void ChangePlayerHealthbar(object sender, EventArgs e)

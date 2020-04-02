@@ -15,7 +15,7 @@ public class TriggerActions : MonoBehaviour
         _playerBeh.IsBlocking = false;
         _playerBeh.CantMove = false;
 
-        if(_playerBeh.CanBlock)
+        if(!_playerBeh.CanBlock)
             StartCoroutine(_playerBeh.TimeTillBlock());
     }
 
