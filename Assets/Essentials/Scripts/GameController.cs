@@ -46,13 +46,19 @@ public class GameController : MonoBehaviour
     
     public static void ChangeGameState(bool gamePlaying)
     {
-        if (gamePlaying) SceneManager.LoadScene("Arena_Scene");
+        if (gamePlaying) 
+        { 
+            SoundController.FadeTrack("Arena_Scene");
+            SceneManager.LoadScene("Arena_Scene");
+        }
         _isGamePlaying = gamePlaying;
     }
 
     public static IEnumerator GoToCharacterSelectScreen()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
+        SoundController.FadeTrack("CharacterSelection_Scene");
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("CharacterSelection_Scene");
     }
 
