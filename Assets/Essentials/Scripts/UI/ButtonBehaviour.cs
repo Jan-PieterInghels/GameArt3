@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(AudioSource))]
 public class ButtonBehaviour : MonoBehaviour
 {
     private GameObject _characterObject;
     public GameObject CharacterObject { get => _characterObject; set { _characterObject = value; } }
 
-    [SerializeField] private CharacterButtonSetup _characterSetup;
+    private CharacterButtonSetup _characterSetup;
     public CharacterButtonSetup CharacterSetup { get => _characterSetup; set { _characterSetup = value; } }
 
     private Sprite _characterSprite;
@@ -21,9 +22,21 @@ public class ButtonBehaviour : MonoBehaviour
     }
 
     [SerializeField] private Image _image;
+    private AudioSource _audioSource;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.loop = false;
+        _audioSource.playOnAwake = false;
+    }
 
     public void ChangeCharacter(int playerNumber)
     {
+        _audioSource.clip = _characterObject.GetComponent<PlayerBehaviour>().PlayerStats.Narrator;
+
+        if(_audioSource.clip != null)
+            _audioSource.Play();
 
         if (playerNumber == 1 && !_characterSetup.IsPlayer1LockedIn)
         {

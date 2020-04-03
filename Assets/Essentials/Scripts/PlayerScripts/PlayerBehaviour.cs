@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using EZCameraShake;
 
-[RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(CharacterController))] [RequireComponent(typeof(AudioSource))]
 public class PlayerBehaviour : MonoBehaviour
 {
     [SerializeField] private CharacterStats _characterStats;
@@ -33,6 +33,7 @@ public class PlayerBehaviour : MonoBehaviour
     public bool CantMove { get => _cantMove; set { _cantMove = value; } }
     private bool _canBlock = true;
     public bool CanBlock => _canBlock;
+    private bool _isHeavy = false; public bool IsHeavy => _isHeavy;
 
     public event EventHandler OnChangeCurrentHealth;
     public event EventHandler OnDefenceCooldown;
@@ -48,6 +49,7 @@ public class PlayerBehaviour : MonoBehaviour
     private float _objectWidth;
 
     private Vector3 impact;
+    private AudioSource _audioSource;
 
     // Start is called before the first frame update
     public void Initialize()
@@ -73,6 +75,11 @@ public class PlayerBehaviour : MonoBehaviour
         _objectWidth = GetComponent<Collider>().bounds.size.x;
 
         _hasInitialized = true;
+
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.loop = false;
+        _audioSource.playOnAwake = false;
+        _audioSource.spatialBlend = 1;
     }
 
     void Update()
@@ -81,6 +88,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             if (Input.GetButtonDown(_normalAttackButton) && !_cantMove)
             {
+                _isHeavy = false;
                 _animController.SetTrigger("FastAttack");
                 _doDamageValue = _characterStats.NormalAttackDamage;
                 _isAttacking = true;
@@ -88,6 +96,9 @@ public class PlayerBehaviour : MonoBehaviour
             }
             if (Input.GetButtonDown(_heavyAttackButton) && !_cantMove)
             {
+                _isHeavy = true;
+                PlaySound(_characterStats.UseHeavy);
+
                 _animController.SetTrigger("HeavyAttack");
                 _doDamageValue = _characterStats.HeavyAttackDamage;
                 _isAttacking = true;
@@ -108,15 +119,24 @@ public class PlayerBehaviour : MonoBehaviour
 
             if (impact.magnitude > 0.2) _characterController.Move(impact * Time.deltaTime);
             impact = Vector3.Lerp(impact, Vector3.zero, 2 * Time.deltaTime);
-
         }
     }
 
     private void TriggerFightEnd()
     {
+        PlaySound(_characterStats.Defeat);
+
         _animController.SetTrigger("HasFainted");
         GameController.ChangeGameState(false);
         StartCoroutine(GameController.GoToCharacterSelectScreen());
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        _audioSource.Stop();
+        _audioSource.clip = clip;
+        if (_audioSource.clip != null)
+            _audioSource.Play();
     }
 
     public IEnumerator TimeTillBlock()
@@ -127,7 +147,7 @@ public class PlayerBehaviour : MonoBehaviour
         _canBlock = true;
     }
 
-    public void TakeDamage(float damage, float force, Vector3 direction)
+    public void TakeDamage(float damage, float force, Vector3 direction, bool isHeavy)
     {
         if (!_isBlocking)
         {
@@ -147,6 +167,9 @@ public class PlayerBehaviour : MonoBehaviour
             OnChangeCurrentHealth?.Invoke(this, EventArgs.Empty);
 
             impact += direction * force / _characterStats.Defence;
+
+            if (isHeavy) PlaySound(_characterStats.GetHitHeavy);
+            else PlaySound(_characterStats.GetHitNormal);
         }
     }
 
@@ -173,11 +196,13 @@ public class PlayerBehaviour : MonoBehaviour
         fdb.Initialize();
     }
 
-    private void DoDamage(GameObject go, Vector3 direction)
+    private void DoDamage(GameObject go, Vector3 direction, bool isHeavy)
     {
+        PlaySound(_characterStats.PunchImpact);
+
         if (!_isDamageDone)
         {
-            go?.GetComponent<PlayerBehaviour>()?.TakeDamage(_doDamageValue, 40, direction);
+            go?.GetComponent<PlayerBehaviour>()?.TakeDamage(_doDamageValue, 40, direction, isHeavy);
             _isDamageDone = true;
         }
     }

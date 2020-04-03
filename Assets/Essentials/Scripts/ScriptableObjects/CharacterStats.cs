@@ -22,7 +22,25 @@ public class CharacterStats : ScriptableObject
     [Range(1, 8)] [SerializeField] private int _timeUntilNextBlock = 2;
     public int TimeUntilNextBlock => _timeUntilNextBlock;
     [Range(1, 50)] [SerializeField] private int _defence = 1;
-    public int Defence => _defence; 
+    public int Defence => _defence;
+
+    [Header("Sound")]
+    [SerializeField] private AudioClip _getHitNormal;
+    public AudioClip GetHitNormal => _getHitNormal;
+    [SerializeField] private AudioClip _getHitHeavy;
+    public AudioClip GetHitHeavy => _getHitHeavy;
+    [SerializeField] private AudioClip _useHeavy;
+    public AudioClip UseHeavy => _useHeavy;
+    [SerializeField] private AudioClip _narrator;
+    public AudioClip Narrator => _narrator;
+    [SerializeField] private AudioClip _victory;
+    public AudioClip Victory => _victory;
+    [SerializeField] private AudioClip _defeat;
+    public AudioClip Defeat => _defeat;
+    [SerializeField] private AudioClip _punchSwoosh;
+    public AudioClip PunchSwoosh => _punchSwoosh;
+    [SerializeField] private AudioClip _punchImpact;
+    public AudioClip PunchImpact => _punchImpact;
 
     private float _actualDamageTaken;
     public float ActualDamageTaken => _actualDamageTaken;

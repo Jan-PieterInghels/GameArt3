@@ -1,8 +1,18 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class TriggerActions : MonoBehaviour
 {
     [SerializeField] private PlayerBehaviour _playerBeh;
+    private AudioSource _audioSource;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.loop = false;
+        _audioSource.playOnAwake = false;
+        _audioSource.spatialBlend = 1;
+    }
 
     public void ResetAnimTrigger()
     {
@@ -42,6 +52,12 @@ public class TriggerActions : MonoBehaviour
         foreach (var trigger in _playerBeh.AttackTriggers)
         {
             trigger.SetActive(true);
-        }
+        }        
+    }
+
+    public void PlaySwoosh()
+    {
+        _audioSource.clip = _playerBeh.PlayerStats.PunchSwoosh;
+        _audioSource.Play();
     }
 }

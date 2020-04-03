@@ -16,8 +16,16 @@ MonoBehaviour:
     type: 3}
   _characterName: Cocky
   _health: 350
-  _normalAttackDamage: 25
+  _normalAttackDamage: 15
   _heavyAttackDamage: 50
   _characterSpeed: 1.2
   _timeUntilNextBlock: 4
-  _defence: 25
+  _defence: 35
+  _getHitNormal: {fileID: 0}
+  _getHitHeavy: {fileID: 0}
+  _useHeavy: {fileID: 0}
+  _narrator: {fileID: 0}
+  _victory: {fileID: 0}
+  _defeat: {fileID: 0}
+  _punchSwoosh: {fileID: 8300000, guid: 5a27275918d4c5c4d9a811fe8b6ff208, type: 3}
+  _punchImpact: {fileID: 8300000, guid: b40ba94493603784b93f1db3b6091feb, type: 3}

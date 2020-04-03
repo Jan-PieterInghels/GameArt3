@@ -24,6 +24,7 @@ public class SoundController : MonoBehaviour
     private void Start()
     {
         _audio = GetComponent<AudioSource>();
+        _audio.loop = true;
 
         StartCoroutine(FadeIn(_clips[0]));
     }

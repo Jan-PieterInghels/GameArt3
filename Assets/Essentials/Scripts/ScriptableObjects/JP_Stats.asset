@@ -19,5 +19,13 @@ MonoBehaviour:
   _normalAttackDamage: 25
   _heavyAttackDamage: 100
   _characterSpeed: 2.5
-  _timeUntilNextBlock: 1.5
+  _timeUntilNextBlock: 1
   _defence: 4
+  _getHitNormal: {fileID: 0}
+  _getHitHeavy: {fileID: 0}
+  _useHeavy: {fileID: 0}
+  _narrator: {fileID: 0}
+  _victory: {fileID: 0}
+  _defeat: {fileID: 0}
+  _punchSwoosh: {fileID: 8300000, guid: 5a27275918d4c5c4d9a811fe8b6ff208, type: 3}
+  _punchImpact: {fileID: 8300000, guid: b40ba94493603784b93f1db3b6091feb, type: 3}
