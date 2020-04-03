@@ -154,11 +154,11 @@ public class CharacterButtonSetup : MonoBehaviour
 
         if (playerNumber == 1)
         {
-            ChangeStats(_player1Stats, 0,0,0,0,0, "Select character");
+            ChangeStats(_player1Stats, 0,0,0,0,0, "P1");
         }
         else if (playerNumber == 2)
         {
-            ChangeStats(_player2Stats, 0, 0, 0, 0, 0, "Select character");
+            ChangeStats(_player2Stats, 0, 0, 0, 0, 0, "P2");
         }
     }
        
