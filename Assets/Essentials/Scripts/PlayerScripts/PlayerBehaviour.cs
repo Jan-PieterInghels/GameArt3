@@ -51,6 +51,8 @@ public class PlayerBehaviour : MonoBehaviour
     private Vector3 impact;
     private AudioSource _audioSource;
 
+    private bool _defeated = false;
+
     // Start is called before the first frame update
     public void Initialize()
     {
@@ -120,23 +122,20 @@ public class PlayerBehaviour : MonoBehaviour
             if (impact.magnitude > 0.2) _characterController.Move(impact * Time.deltaTime);
             impact = Vector3.Lerp(impact, Vector3.zero, 2 * Time.deltaTime);
         }
+        else if (!GameController.IsGamePlaying && !_defeated)
+        {
+            PlaySound(_characterStats.Victory);
+        }
     }
 
     private void TriggerFightEnd()
     {
+        _defeated = true;
         PlaySound(_characterStats.Defeat);
 
         _animController.SetTrigger("HasFainted");
         GameController.ChangeGameState(false);
         StartCoroutine(GameController.GoToCharacterSelectScreen());
-    }
-
-    private void PlaySound(AudioClip clip)
-    {
-        _audioSource.Stop();
-        _audioSource.clip = clip;
-        if (_audioSource.clip != null)
-            _audioSource.Play();
     }
 
     public IEnumerator TimeTillBlock()
@@ -251,5 +250,14 @@ public class PlayerBehaviour : MonoBehaviour
     private float FloatClamp(float value, float min, float max)
     {
         return (value <= min) ? min : (value >= max) ? max : value;
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        _audioSource.Stop();
+        _audioSource.clip = clip;
+
+        if (_audioSource.clip != null)
+            _audioSource.Play();
     }
 }
