@@ -254,10 +254,13 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void PlaySound(AudioClip clip)
     {
-        _audioSource.Stop();
-        _audioSource.clip = clip;
+        if (_audioSource != null)
+        {
+            _audioSource.Stop();
+            _audioSource.clip = clip;
 
-        if (_audioSource.clip != null)
-            _audioSource.Play();
+            if (_audioSource.clip != null)
+                _audioSource.Play();
+        }
     }
 }

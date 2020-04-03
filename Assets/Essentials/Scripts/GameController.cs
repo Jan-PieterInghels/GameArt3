@@ -52,12 +52,12 @@ public class GameController : MonoBehaviour
     
     public static void ChangeGameState(bool gamePlaying)
     {
+        _isGamePlaying = gamePlaying;
         if (gamePlaying) 
         {
             _soundControl.FadeTrack("Arena_Scene");
             SceneManager.LoadScene("Arena_Scene");
         }
-        _isGamePlaying = gamePlaying;
     }
 
     public static IEnumerator GoToCharacterSelectScreen()
