@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour
     private void Setup()
     {
         _playerCharacter = new Dictionary<int, GameObject>();
-        _soundControl = _gameControllers.Last.Value.GetComponent<SoundController>();
+        _soundControl = _gameControllers.First.Value.GetComponent<SoundController>();
 
         for (int i = 1; i <= _playerAmount; i++)
         {
