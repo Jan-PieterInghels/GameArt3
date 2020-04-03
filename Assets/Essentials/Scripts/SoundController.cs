@@ -9,36 +9,41 @@ public class SoundController : MonoBehaviour
     private static bool IsFadingIn = false;
     private static bool IsFadingOut = false;
 
-    [Header("Background soundtracks")] [SerializeField] private AudioClip[] _clips;
-    private static AudioClip[] CLIPS;
+    [Header("Background soundtracks")] 
+    [SerializeField] private AudioClip[] _clips;
 
-    public static SoundController INSTANCE;
+    [Header("FadeIn variables")]
+    [SerializeField] private float _fadeInTime;
+    [SerializeField] private float _maxVolume;
+    [SerializeField] private float _fadeInSteps;
 
-    private void Awake()
-    {
-        INSTANCE = this;
-    }
+    [Header("FadeOut variables")]
+    [SerializeField] private float _fadeOutTime;
+    [SerializeField] private float _fadeOutSteps;
 
     private void Start()
     {
         _audio = GetComponent<AudioSource>();
-        CLIPS = _clips;
 
-        INSTANCE.StartCoroutine(FadeIn(CLIPS[0], 0.05f, 0.5f));
+        StartCoroutine(FadeIn(_clips[0]));
     }
 
-    public static void FadeTrack(string sceneName)
+    public void FadeTrack(string sceneName)
     {
         switch (sceneName)
         {
-            case "Arena_Scene": INSTANCE.StartCoroutine(FadeOut(CLIPS[1], 0.08f, 0.5f));
+            case "Arena_Scene": 
+                if(_audio.clip != _clips[1])
+                    StartCoroutine(FadeOut(_clips[1]));
                 break;
-            case "CharacterSelection_Scene": INSTANCE.StartCoroutine(FadeOut(CLIPS[0], 0.05f, 0.5f));
+            case "CharacterSelection_Scene":
+                if (_audio.clip != _clips[0])
+                    StartCoroutine(FadeOut(_clips[0]));
                 break;
         }
     }
 
-    static IEnumerator FadeIn(AudioClip clip, float speed, float maxVolume)
+    private IEnumerator FadeIn(AudioClip clip)
     {
         IsFadingIn = true;
         IsFadingOut = false;
@@ -49,28 +54,28 @@ public class SoundController : MonoBehaviour
         _audio.clip = clip;
         _audio.Play();
 
-        while(_audio.volume < maxVolume && IsFadingIn)
+        while(_audio.volume < _maxVolume && IsFadingIn)
         {
-            audioVolume += speed;
+            audioVolume += _fadeInTime/_fadeInSteps;
             _audio.volume = audioVolume;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(_fadeInTime / _fadeInSteps);
         }
     }
 
-    static IEnumerator FadeOut(AudioClip clip, float speed, float maxVolume)
+    private IEnumerator FadeOut(AudioClip clip)
     {
         IsFadingIn = false;
         IsFadingOut = true;
 
         float audioVolume = _audio.volume;
 
-        while (_audio.volume >= speed && IsFadingOut)
+        while (_audio.volume >= 0.1f && IsFadingOut)
         {
-            audioVolume -= speed;
+            audioVolume -= _fadeOutTime / _fadeOutSteps;
             _audio.volume = audioVolume;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(_fadeOutTime / _fadeOutSteps);
         }
 
-        INSTANCE.StartCoroutine(FadeIn(clip, speed, maxVolume));
+        StartCoroutine(FadeIn(clip));
     }
 }

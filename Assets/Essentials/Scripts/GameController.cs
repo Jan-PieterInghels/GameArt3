@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(SoundController))]
 public class GameController : MonoBehaviour
 {
     [Range(1, 2)] [SerializeField] private static int _playerAmount = 2;
@@ -17,6 +18,9 @@ public class GameController : MonoBehaviour
     private static bool _isGamePlaying = true;
     public static bool IsGamePlaying { get => _isGamePlaying; set { _isGamePlaying = value; } }
 
+    private static SoundController _soundControl;
+    private static LinkedList<GameObject> _gameControllers = new LinkedList<GameObject>();
+
     private void Awake()
     {
         CheckDontDestroyOnLoad();
@@ -26,17 +30,19 @@ public class GameController : MonoBehaviour
 
     private void CheckDontDestroyOnLoad()
     {
-        GameObject[] gos = GameObject.FindGameObjectsWithTag("GameController");
-        if (gos.Length > 1)
+        _gameControllers.AddLast(this.gameObject);
+        if (_gameControllers.Count > 1)
         {
-            Destroy(this.gameObject);
+            Destroy(_gameControllers.Last.Value);
         }
-        DontDestroyOnLoad(this.gameObject);
+        else
+            DontDestroyOnLoad(this.gameObject);
     }
 
     private void Setup()
     {
         _playerCharacter = new Dictionary<int, GameObject>();
+        _soundControl = _gameControllers.Last.Value.GetComponent<SoundController>();
 
         for (int i = 1; i <= _playerAmount; i++)
         {
@@ -47,8 +53,8 @@ public class GameController : MonoBehaviour
     public static void ChangeGameState(bool gamePlaying)
     {
         if (gamePlaying) 
-        { 
-            SoundController.FadeTrack("Arena_Scene");
+        {
+            _soundControl.FadeTrack("Arena_Scene");
             SceneManager.LoadScene("Arena_Scene");
         }
         _isGamePlaying = gamePlaying;
@@ -57,7 +63,7 @@ public class GameController : MonoBehaviour
     public static IEnumerator GoToCharacterSelectScreen()
     {
         yield return new WaitForSeconds(2f);
-        SoundController.FadeTrack("CharacterSelection_Scene");
+        _soundControl.FadeTrack("CharacterSelection_Scene");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("CharacterSelection_Scene");
     }
