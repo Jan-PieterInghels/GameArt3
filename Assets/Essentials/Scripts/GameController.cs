@@ -50,11 +50,12 @@ public class GameController : MonoBehaviour
 
     private void Setup()
     {
-        _winSource = GetComponentInChildren<AudioSource>();
-        WINSOURCE = _winSource;
-        INSTANCE = this;
+        INSTANCE = _gameControllers.First.Value.GetComponent<GameController>();
         _playerCharacter = new Dictionary<int, GameObject>();
         _soundControl = _gameControllers.First.Value.GetComponent<SoundController>();
+        _winSource = _gameControllers.First.Value.GetComponentInChildren<AudioSource>();
+        WINSOURCE = _winSource;
+        WINSOURCE.loop = false;
 
         for (int i = 1; i <= _playerAmount; i++)
         {
@@ -63,18 +64,27 @@ public class GameController : MonoBehaviour
 
         PLAYERAMOUNT = _playerAmount;
         TIMETILLEND = _timeTillEndRound;
-    }     
+    }    
     
+    public static void PlayVictory(int playerNumber)
+    {
+        WINSOURCE.clip = _playerCharacter[playerNumber].GetComponent<PlayerBehaviour>().PlayerStats.Victory;
+        WINSOURCE.Play();
+    }
+
     public static void ChangeGameState(bool gamePlaying, PlayerBehaviour beh)
     {
-        if(!beh.Defeated)
-        {
-            WINSOURCE.clip = beh.PlayerStats.Victory;
-            WINSOURCE.Play();
-        }
+        if (beh.PlayerNumber == 1) PlayVictory(2);
+        else PlayVictory(1);
 
         _isGamePlaying = gamePlaying;
-        if (gamePlaying) 
+        INSTANCE.StartCoroutine(GoToCharacterSelectScreen());
+    }
+
+    public static void ChangeGameState(bool gamePlaying)
+    {
+        _isGamePlaying = gamePlaying;
+        if (gamePlaying)
         {
             _soundControl.FadeTrack("Arena_Scene");
             SceneManager.LoadScene("Arena_Scene");

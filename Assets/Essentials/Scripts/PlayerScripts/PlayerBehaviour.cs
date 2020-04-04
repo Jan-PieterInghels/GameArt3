@@ -85,7 +85,7 @@ public class PlayerBehaviour : MonoBehaviour
         _audioSource.spatialBlend = 1;
     }
 
-    void Update()
+    private void Update()
     {
         if (_hasInitialized && GameController.IsGamePlaying)
         {
@@ -120,16 +120,17 @@ public class PlayerBehaviour : MonoBehaviour
                 hit.OnHit += DoDamage;
             }
 
-            if (impact.magnitude > 0.2) _characterController.Move(impact * Time.deltaTime);
+            if (impact.magnitude > 0.2f) _characterController.Move(impact * Time.deltaTime);
             impact = Vector3.Lerp(impact, Vector3.zero, 2 * Time.deltaTime);
         }
     }
 
     private void TriggerFightEnd()
     {
+        _defeated = true;
+
         _animController.SetTrigger("HasFainted");
         GameController.ChangeGameState(false, this);
-        StartCoroutine(GameController.GoToCharacterSelectScreen());
     }
 
     public IEnumerator TimeTillBlock()
@@ -147,7 +148,6 @@ public class PlayerBehaviour : MonoBehaviour
             var resultDamage = _characterStats.TakeDamage(damage);
             _currentHP -= resultDamage;
 
-
             CheckCameraShakeAmount(resultDamage);
 
             if (_currentHP > 0)
@@ -163,7 +163,7 @@ public class PlayerBehaviour : MonoBehaviour
             if (isHeavy) PlaySound(_characterStats.GetHitHeavy);
             else PlaySound(_characterStats.GetHitNormal);
 
-            if (_currentHP <= 0) { TriggerFightEnd(); return; }
+            if (_currentHP <= 0) TriggerFightEnd();
         }
     }
 
