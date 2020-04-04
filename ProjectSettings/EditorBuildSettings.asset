@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Essentials/Scenes/Arena_Scene.unity
     guid: 9e7a20ac257e55447ab53ca1cea5b085
+  - enabled: 1
+    path: Assets/Essentials/Scenes/MainMenu.unity
+    guid: 57f1e306277f0144eaca46983b032aa1
   m_configObjects: {}

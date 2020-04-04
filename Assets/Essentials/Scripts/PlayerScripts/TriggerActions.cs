@@ -5,6 +5,7 @@ public class TriggerActions : MonoBehaviour
 {
     [SerializeField] private PlayerBehaviour _playerBeh;
     [SerializeField] private GameObject _blockParticle;
+    [SerializeField] private Transform _blockTrans;
 
     private AudioSource _audioSource;
     private GameObject instObj;
@@ -27,7 +28,7 @@ public class TriggerActions : MonoBehaviour
         _playerBeh.IsAttacking = false;
         _playerBeh.IsBlocking = false;
         _playerBeh.CantMove = false;
-
+        
         if(!_playerBeh.CanBlock)
             StartCoroutine(_playerBeh.TimeTillBlock());
     }
@@ -35,8 +36,8 @@ public class TriggerActions : MonoBehaviour
     public void SetBlocking()
     {
         _playerBeh.IsBlocking = true;
-        instObj = Instantiate(_blockParticle, _playerBeh.transform.position + Vector3.up, Quaternion.identity);
-        instObj.transform.parent = null;
+        instObj = Instantiate(_blockParticle, _blockTrans);
+        instObj.transform.position = _blockTrans.position;
     }
 
     public void ResetBlocking()

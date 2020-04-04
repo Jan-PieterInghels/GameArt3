@@ -103,7 +103,7 @@ ScriptedImporter:
         float: 1
       colors:
       - name: _BaseColor
-        color: {r: 0, g: 0, b: 0, a: 1}
+        color: {r: 0.37425193, g: 0.5660378, b: 0.18956926, a: 1}
       - name: _Color
         color: {r: 1, g: 1, b: 1, a: 1}
       - name: _EmissionColor

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4516,16 +4516,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1388614021995231900, guid: bb5ba3c87273a6f42814a89c3c3e91ad,
-        type: 3}
-      propertyPath: _maxVolume
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1388614021995231900, guid: bb5ba3c87273a6f42814a89c3c3e91ad,
-        type: 3}
-      propertyPath: _clips.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 0d148cd0547ec2d42a18e425cf0ad85c, type: 3}
     - target: {fileID: 6262877925154836204, guid: bb5ba3c87273a6f42814a89c3c3e91ad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4585,16 +4575,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameController
-      objectReference: {fileID: 0}
-    - target: {fileID: 6262877925154836207, guid: bb5ba3c87273a6f42814a89c3c3e91ad,
-        type: 3}
-      propertyPath: _timeTillEndRound
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9210210297610190970, guid: bb5ba3c87273a6f42814a89c3c3e91ad,
-        type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb5ba3c87273a6f42814a89c3c3e91ad, type: 3}

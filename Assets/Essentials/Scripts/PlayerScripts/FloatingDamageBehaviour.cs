@@ -16,6 +16,8 @@ public class FloatingDamageBehaviour : MonoBehaviour
         else if (DamageAmount > 50) _textMesh.color = _damageColor[2];
         else _textMesh.color = _damageColor[1];
 
+        if (DamageAmount <= 0) _textMesh.text = "Miss!";
+
         Destroy(gameObject, _destroyTime);
     }
 }

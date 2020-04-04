@@ -54,6 +54,8 @@ public class PlayerBehaviour : MonoBehaviour
     private bool _defeated = false;
     public bool Defeated => _defeated;
 
+    public bool HasDoneDamage;
+
     // Start is called before the first frame update
     public void Initialize()
     {
@@ -149,11 +151,10 @@ public class PlayerBehaviour : MonoBehaviour
             _currentHP -= resultDamage;
 
             CheckCameraShakeAmount(resultDamage);
+            InstantiateDamage();
 
             if (_currentHP > 0)
                 _animController.SetTrigger("Hit");
-
-            InstantiateDamage();
 
             if (_currentHP < 0) _currentHP = 0;
             OnChangeCurrentHealth?.Invoke(this, EventArgs.Empty);
@@ -180,7 +181,7 @@ public class PlayerBehaviour : MonoBehaviour
         CameraShaker.Instance.ShakeOnce(impact, roughness, fadeInTime, fadeOutTime);
     }
 
-    private void InstantiateDamage()
+    public void InstantiateDamage()
     {
         GameObject go = Instantiate(_floatingPoints, transform.position, Quaternion.identity);
         go.transform.position = _instantiationPointFloatingPoints.position;
