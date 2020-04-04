@@ -71,6 +71,7 @@ public class GUIController : MonoBehaviour
     {
         defencebar.value = 0;
         image.fillAmount = 0;
+
         for (int i = 0; i < (defencebar.maxValue * _timeDevider); i++)
         {
             yield return new WaitForSeconds(1f / _timeDevider);

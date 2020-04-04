@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(SoundController))]
 public class GameController : MonoBehaviour
 {
-    [Range(1, 2)] [SerializeField] private static int _playerAmount = 2;
-    public static int PlayerAmount { get => _playerAmount; set { _playerAmount = value; } }
+    [SerializeField] private float _timeTillEndRound;
+    private static float TIMETILLEND;
+    [Range(1, 2)] [SerializeField] private int _playerAmount = 2;
+    private static int PLAYERAMOUNT;
+    public static int PlayerAmount { get => PLAYERAMOUNT; set { PLAYERAMOUNT = value; } }
 
     private static int _characterAmount;
     public static int CharacterAmount { get => _characterAmount; set { _characterAmount = value; } }
@@ -16,10 +19,12 @@ public class GameController : MonoBehaviour
     public static Dictionary<int, GameObject> PlayerCharacter { get => _playerCharacter; set { _playerCharacter = value; } }
 
     private static bool _isGamePlaying = true;
-    public static bool IsGamePlaying { get => _isGamePlaying; set { _isGamePlaying = value; } }
+    public static bool IsGamePlaying { get => _isGamePlaying; set { _isGamePlaying = value;} }
 
     private static SoundController _soundControl;
     private static LinkedList<GameObject> _gameControllers = new LinkedList<GameObject>();
+
+    private static GameController INSTANCE;
 
     private void Awake()
     {
@@ -41,6 +46,7 @@ public class GameController : MonoBehaviour
 
     private void Setup()
     {
+        INSTANCE = this;
         _playerCharacter = new Dictionary<int, GameObject>();
         _soundControl = _gameControllers.First.Value.GetComponent<SoundController>();
 
@@ -48,6 +54,9 @@ public class GameController : MonoBehaviour
         {
             _playerCharacter.Add(i, null);
         }
+
+        PLAYERAMOUNT = _playerAmount;
+        TIMETILLEND = _timeTillEndRound;
     }     
     
     public static void ChangeGameState(bool gamePlaying)
@@ -62,7 +71,7 @@ public class GameController : MonoBehaviour
 
     public static IEnumerator GoToCharacterSelectScreen()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(TIMETILLEND - 1f);
         _soundControl.FadeTrack("CharacterSelection_Scene");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("CharacterSelection_Scene");

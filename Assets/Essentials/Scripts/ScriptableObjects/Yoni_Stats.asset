@@ -21,11 +21,11 @@ MonoBehaviour:
   _characterSpeed: 1.2
   _timeUntilNextBlock: 4
   _defence: 35
-  _getHitNormal: {fileID: 8300000, guid: 6cbaf267219d9f045bf97785be3ae063, type: 3}
-  _getHitHeavy: {fileID: 8300000, guid: 22f6030d8331e824db3ef542948cc3e5, type: 3}
+  _getHitNormal: {fileID: 8300000, guid: 333960c3e89403147abe4fb70f2cf167, type: 3}
+  _getHitHeavy: {fileID: 8300000, guid: cf598ab826e43da4cb6bd26f6afd74b6, type: 3}
   _useHeavy: {fileID: 8300000, guid: 2aef56da20af76a4e96ff517af3b87d1, type: 3}
   _narrator: {fileID: 8300000, guid: d12a2b58f82470c44b6fbccb1ad1098f, type: 3}
-  _victory: {fileID: 8300000, guid: 6882fe8f06e134e40a495fc8e144c761, type: 3}
-  _defeat: {fileID: 8300000, guid: 5d366c07fd6413e4b95c5904e546541b, type: 3}
+  _victory: {fileID: 8300000, guid: 5f991460521f0d745ba440f61ab9b6cc, type: 3}
+  _defeat: {fileID: 8300000, guid: c141b88d136e3be4f849aa7aa4ea7553, type: 3}
   _punchSwoosh: {fileID: 8300000, guid: 5a27275918d4c5c4d9a811fe8b6ff208, type: 3}
   _punchImpact: {fileID: 8300000, guid: b40ba94493603784b93f1db3b6091feb, type: 3}

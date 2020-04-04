@@ -153,12 +153,11 @@ public class PlayerBehaviour : MonoBehaviour
             var resultDamage = _characterStats.TakeDamage(damage);
             _currentHP -= resultDamage;
 
+
             CheckCameraShakeAmount(resultDamage);
 
             if (_currentHP > 0)
                 _animController.SetTrigger("Hit");
-            else
-                TriggerFightEnd();
 
             InstantiateDamage();
 
@@ -169,6 +168,8 @@ public class PlayerBehaviour : MonoBehaviour
 
             if (isHeavy) PlaySound(_characterStats.GetHitHeavy);
             else PlaySound(_characterStats.GetHitNormal);
+
+            if (_currentHP <= 0) { TriggerFightEnd(); return; }
         }
     }
 

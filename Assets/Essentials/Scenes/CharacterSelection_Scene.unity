@@ -4478,6 +4478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameController
       objectReference: {fileID: 0}
+    - target: {fileID: 6262877925154836207, guid: bb5ba3c87273a6f42814a89c3c3e91ad,
+        type: 3}
+      propertyPath: _timeTillEndRound
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9210210297610190970, guid: bb5ba3c87273a6f42814a89c3c3e91ad,
         type: 3}
       propertyPath: m_PlayOnAwake
