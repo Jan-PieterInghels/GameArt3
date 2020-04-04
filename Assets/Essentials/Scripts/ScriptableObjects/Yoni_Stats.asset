@@ -25,7 +25,7 @@ MonoBehaviour:
   _getHitHeavy: {fileID: 8300000, guid: cf598ab826e43da4cb6bd26f6afd74b6, type: 3}
   _useHeavy: {fileID: 8300000, guid: 2aef56da20af76a4e96ff517af3b87d1, type: 3}
   _narrator: {fileID: 8300000, guid: d12a2b58f82470c44b6fbccb1ad1098f, type: 3}
-  _victory: {fileID: 8300000, guid: 5f991460521f0d745ba440f61ab9b6cc, type: 3}
+  _victory: {fileID: 8300000, guid: e8ee0b899ad0d944a84f8defadf0c3e3, type: 3}
   _defeat: {fileID: 8300000, guid: c141b88d136e3be4f849aa7aa4ea7553, type: 3}
   _punchSwoosh: {fileID: 8300000, guid: 5a27275918d4c5c4d9a811fe8b6ff208, type: 3}
   _punchImpact: {fileID: 8300000, guid: b40ba94493603784b93f1db3b6091feb, type: 3}

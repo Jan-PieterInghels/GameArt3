@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using TMPro;
 
 public class FloatingDamageBehaviour : MonoBehaviour
 {
     [SerializeField] private Color[] _damageColor;
-    [SerializeField] private TextMesh _textMesh;
+    [SerializeField] private TextMeshPro _textMesh;
     [SerializeField] private float _destroyTime = 1f;
     public float DamageAmount { get; set; }
 
