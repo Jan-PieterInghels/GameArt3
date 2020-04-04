@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerPortret: {fileID: 6366867763842495747, guid: 788faced8b64b214a9fa9329bd4f0fa8,
     type: 3}
-  _characterName: Brian
+  _characterName: Brajoeji
   _health: 150
   _normalAttackDamage: 28.6
   _heavyAttackDamage: 71.2
