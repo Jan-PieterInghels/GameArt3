@@ -35,8 +35,6 @@ public class CharacterStats : ScriptableObject
     public AudioClip Narrator => _narrator;
     [SerializeField] private AudioClip _victory;
     public AudioClip Victory => _victory;
-    [SerializeField] private AudioClip _defeat;
-    public AudioClip Defeat => _defeat;
     [SerializeField] private AudioClip _punchSwoosh;
     public AudioClip PunchSwoosh => _punchSwoosh;
     [SerializeField] private AudioClip _punchImpact;

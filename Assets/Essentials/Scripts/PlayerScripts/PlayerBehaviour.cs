@@ -52,6 +52,7 @@ public class PlayerBehaviour : MonoBehaviour
     private AudioSource _audioSource;
 
     private bool _defeated = false;
+    public bool Defeated => _defeated;
 
     // Start is called before the first frame update
     public void Initialize()
@@ -122,19 +123,12 @@ public class PlayerBehaviour : MonoBehaviour
             if (impact.magnitude > 0.2) _characterController.Move(impact * Time.deltaTime);
             impact = Vector3.Lerp(impact, Vector3.zero, 2 * Time.deltaTime);
         }
-        else if (!GameController.IsGamePlaying && !_defeated)
-        {
-            PlaySound(_characterStats.Victory);
-        }
     }
 
     private void TriggerFightEnd()
     {
-        _defeated = true;
-        PlaySound(_characterStats.Defeat);
-
         _animController.SetTrigger("HasFainted");
-        GameController.ChangeGameState(false);
+        GameController.ChangeGameState(false, this);
         StartCoroutine(GameController.GoToCharacterSelectScreen());
     }
 

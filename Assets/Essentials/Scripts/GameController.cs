@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(SoundController))]
 public class GameController : MonoBehaviour
 {
+
     [SerializeField] private float _timeTillEndRound;
     private static float TIMETILLEND;
     [Range(1, 2)] [SerializeField] private int _playerAmount = 2;
@@ -25,6 +26,9 @@ public class GameController : MonoBehaviour
     private static LinkedList<GameObject> _gameControllers = new LinkedList<GameObject>();
 
     private static GameController INSTANCE;
+
+    [SerializeField] private AudioSource _winSource;
+    private static AudioSource WINSOURCE;
 
     private void Awake()
     {
@@ -46,6 +50,8 @@ public class GameController : MonoBehaviour
 
     private void Setup()
     {
+        _winSource = GetComponentInChildren<AudioSource>();
+        WINSOURCE = _winSource;
         INSTANCE = this;
         _playerCharacter = new Dictionary<int, GameObject>();
         _soundControl = _gameControllers.First.Value.GetComponent<SoundController>();
@@ -59,8 +65,14 @@ public class GameController : MonoBehaviour
         TIMETILLEND = _timeTillEndRound;
     }     
     
-    public static void ChangeGameState(bool gamePlaying)
+    public static void ChangeGameState(bool gamePlaying, PlayerBehaviour beh)
     {
+        if(!beh.Defeated)
+        {
+            WINSOURCE.clip = beh.PlayerStats.Victory;
+            WINSOURCE.Play();
+        }
+
         _isGamePlaying = gamePlaying;
         if (gamePlaying) 
         {
