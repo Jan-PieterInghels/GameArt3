@@ -4,7 +4,10 @@
 public class TriggerActions : MonoBehaviour
 {
     [SerializeField] private PlayerBehaviour _playerBeh;
+    [SerializeField] private GameObject _blockParticle;
+
     private AudioSource _audioSource;
+    private GameObject instObj;
 
     private void Start()
     {
@@ -32,11 +35,14 @@ public class TriggerActions : MonoBehaviour
     public void SetBlocking()
     {
         _playerBeh.IsBlocking = true;
+        instObj = Instantiate(_blockParticle, _playerBeh.transform.position + Vector3.up, Quaternion.identity);
+        instObj.transform.parent = null;
     }
 
     public void ResetBlocking()
     {
         _playerBeh.IsBlocking = false;
+        Destroy(instObj);
     }
 
     public void ResetTriggers()
