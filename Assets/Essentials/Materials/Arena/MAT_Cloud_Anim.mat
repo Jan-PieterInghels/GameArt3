@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MAT_Body
-  m_Shader: {fileID: -6465566751694194690, guid: c8fffb9154ce16b41ab32b48d145275b,
+  m_Name: MAT_Cloud_Anim
+  m_Shader: {fileID: -6465566751694194690, guid: 827b23cacc3b19a48b3e346d1670eabc,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -20,22 +20,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_4D4DC214:
-        m_Texture: {fileID: 2800000, guid: 11326660024792f41822feaa448295ec, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_792032E:
-        m_Texture: {fileID: 2800000, guid: 11326660024792f41822feaa448295ec, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_C73C6F5A:
-        m_Texture: {fileID: 2800000, guid: 11326660024792f41822feaa448295ec, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_F68930D5:
-        m_Texture: {fileID: 2800000, guid: 7957e7f5f7a66a548be4cc99c37d2192, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -65,8 +49,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_66BD4BD7: 0.58
-    - Vector1_EC995B68: 0.6
+    - Vector1_2EBB9103: 0.7
+    - Vector1_7D20314B: 0
+    - Vector1_AF6D6782: 0.2
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -76,29 +61,27 @@ Material:
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
-    - _GlossinessSource: 0
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Shininess: 0
     - _Smoothness: 0.5
-    - _SmoothnessSource: 0
     - _SmoothnessTextureChannel: 0
-    - _SpecSource: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_C9D0A17C: {r: 1, g: 0.5793858, b: 0.4009434, a: 1}
-    - _BaseColor: {r: 0.8207547, g: 0.737191, b: 0.31359026, a: 1}
-    - _Color: {r: 0.5647, g: 0.3137, b: 0.0471, a: 1}
+    - Color_133D6A47: {r: 1, g: 1, b: 1, a: 1}
+    - Color_882F301B: {r: 1, g: 1, b: 1, a: 1}
+    - Vector2_C425B125: {r: 2, g: 2, b: 2, a: 0}
+    - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
---- !u!114 &8222502897552308040
+--- !u!114 &1590112408093628659
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
