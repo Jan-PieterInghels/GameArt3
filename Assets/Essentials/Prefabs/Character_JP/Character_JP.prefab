@@ -459,7 +459,7 @@ Transform:
   m_GameObject: {fileID: 3495905210212416783}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_Children:
   - {fileID: 5529721984504039919}
   - {fileID: 4066175739076080621}
@@ -996,7 +996,7 @@ Transform:
   m_GameObject: {fileID: 7990527500251310905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8514099059469696155}
   - {fileID: 493331749690085148}
@@ -1045,6 +1045,7 @@ MonoBehaviour:
   _floatingPoints: {fileID: 7632250155645166426, guid: 8295131836fdb8d4ebdf27bc4dbf6200,
     type: 3}
   _instantiationPointFloatingPoints: {fileID: 8514099059469696155}
+  HasDoneDamage: 0
 --- !u!82 &1778039985824835038
 AudioSource:
   m_ObjectHideFlags: 0
