@@ -501,6 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerBeh: {fileID: 5374635719993162255}
+  _blockParticle: {fileID: 0}
 --- !u!82 &1183923213933454490
 AudioSource:
   m_ObjectHideFlags: 0
@@ -753,14 +754,14 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8fee5a94ee1da3147982383546423d32, type: 2}
-  - {fileID: 7580940122526908561, guid: 1e29ad61b774ada4ab63716ceba36d58, type: 3}
-  - {fileID: 2100000, guid: de8d28a0913cb504daa34451fd5e431d, type: 2}
-  - {fileID: 2100000, guid: 4a28c98a40b17e840ac6ae495032492a, type: 2}
-  - {fileID: 2100000, guid: 09e15063ec3bd314d852064b15290e5a, type: 2}
-  - {fileID: 2100000, guid: 9aa65b32319414245a9667f7746c97e3, type: 2}
-  - {fileID: 2100000, guid: f62df44dda148c44d86cdc5e5fddd6c1, type: 2}
-  - {fileID: 2100000, guid: b77a13a021fec654cac2c8ec25c1f530, type: 2}
+  - {fileID: 2100000, guid: a8d34daae3fd1bb4384f15f31679bbed, type: 2}
+  - {fileID: 4345675312915828770, guid: 4145dcaeee3acd24292645a5dd60f959, type: 3}
+  - {fileID: -8891552034800476465, guid: b3a007d92f13c9945b29547f1c306765, type: 3}
+  - {fileID: 2100000, guid: 6aa7522adf2ada947ad5ab72909fe60f, type: 2}
+  - {fileID: -8946453984847070340, guid: cbb1b42723a849d4ab7d953b86152ee2, type: 3}
+  - {fileID: -8946453984847070340, guid: cbb1b42723a849d4ab7d953b86152ee2, type: 3}
+  - {fileID: 2100000, guid: e2435dbb151d30440a9f43f2387ffc87, type: 2}
+  - {fileID: 2100000, guid: 594630270e2ebbc428d036c864e9592f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -992,7 +993,7 @@ Transform:
   m_GameObject: {fileID: 7990527500251310905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 8514099059469696155}
   - {fileID: 493331749690085148}

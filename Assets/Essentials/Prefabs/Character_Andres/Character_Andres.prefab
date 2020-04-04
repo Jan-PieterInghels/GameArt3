@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerBeh: {fileID: 5374635719993162255}
+  _blockParticle: {fileID: 0}
 --- !u!82 &2510570907779185057
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1078,15 +1079,15 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 7580940122526908561, guid: ee1ba0ae6bef49a41b5ee5f50cdf31b5, type: 3}
-  - {fileID: 7580940122526908561, guid: d96f7da403ea13140a7edfa80ad81c8d, type: 3}
-  - {fileID: 2100000, guid: 23b1e3ea2d2c843408f73fec5d9c639a, type: 2}
+  - {fileID: -8891552034800476465, guid: 927fe68b4db82ef4f8615583e99ac2a3, type: 3}
+  - {fileID: 4345675312915828770, guid: 0657a3a85facec840976cf00659b6073, type: 3}
+  - {fileID: 4345675312915828770, guid: 0657a3a85facec840976cf00659b6073, type: 3}
   - {fileID: 2100000, guid: 423bb57c3af6736488620e82b0551e0a, type: 2}
   - {fileID: 2100000, guid: 98763dfe80e924640be168f9cb9708f0, type: 2}
-  - {fileID: 2100000, guid: 10763b32ca35c3d4f9b974c58b58ff67, type: 2}
+  - {fileID: 2100000, guid: 82ba18033ec6ccf4f9fc30aead14175b, type: 2}
   - {fileID: 7580940122526908561, guid: 8d82610d140e67541bba08b92c5d41d0, type: 3}
-  - {fileID: 2100000, guid: 1967fd9b48606ea4e9e0cbef78abc735, type: 2}
-  - {fileID: 2100000, guid: 27a9970204ea8024ebcbc683b11134f0, type: 2}
+  - {fileID: 2100000, guid: 27bec0005e5f73b44a8e9a231d787c4b, type: 2}
+  - {fileID: 2100000, guid: e43d9836bb7fcb44d911b3492376e312, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

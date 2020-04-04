@@ -514,12 +514,12 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eafbf9d0427a0864a95835e1d90753a4, type: 2}
+  - {fileID: -8946453984847070340, guid: b37babf7609dd4b4fb8a801e7bc9d740, type: 3}
   - {fileID: 2100000, guid: d7cde25450e7eb44cb60baf5e893c4d9, type: 2}
-  - {fileID: 2100000, guid: 8cbf8606f5c6e4e4caf26d92a13da5f2, type: 2}
-  - {fileID: 2100000, guid: 21494f3cffdfe1b48bcbcc5a8bfc1028, type: 2}
-  - {fileID: 2100000, guid: e100ed6b9fff4f54f8406a4e584f4627, type: 2}
-  - {fileID: 2100000, guid: 56ef4e1969db10c4f8a0f74e1b6f3de1, type: 2}
+  - {fileID: -8891552034800476465, guid: 79db892186bb5b0488cc0a6a3a868f1e, type: 3}
+  - {fileID: 4345675312915828770, guid: e052813f683526c42ba1649e952c4684, type: 3}
+  - {fileID: 2100000, guid: 30cccb935a2c4534ab23c53cf8800d73, type: 2}
+  - {fileID: 2100000, guid: 7068432a6b479ba4088a4266c75ce826, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -980,6 +980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerBeh: {fileID: 6238819117721883395}
+  _blockParticle: {fileID: 0}
 --- !u!82 &2240449637766009079
 AudioSource:
   m_ObjectHideFlags: 0

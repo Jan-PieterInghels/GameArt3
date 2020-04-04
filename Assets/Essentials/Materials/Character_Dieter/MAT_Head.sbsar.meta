@@ -10,7 +10,7 @@ ScriptedImporter:
   script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
   version: 24
   mGraphInstanceData:
-  - graphLabel: Ancient Fantasy World Map
+  - graphLabel: MAT_Head
     prototypeName: Ancient Fantasy World Map
     graphDescIndex: 0
     generateAllOutputs: 0
@@ -30,7 +30,7 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _BumpMap
-        texture: {fileID: 3904157650475733506, guid: c95096ea91bcab04b8ee127a6450b252,
+        texture: {fileID: 5225050936072699605, guid: c95096ea91bcab04b8ee127a6450b252,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -39,22 +39,22 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MainTex
-        texture: {fileID: 5721057500706870076, guid: c95096ea91bcab04b8ee127a6450b252,
+        texture: {fileID: -8852557729595465334, guid: c95096ea91bcab04b8ee127a6450b252,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
-        texture: {fileID: -5332329006011277808, guid: c95096ea91bcab04b8ee127a6450b252,
+        texture: {fileID: 1298622569032229741, guid: c95096ea91bcab04b8ee127a6450b252,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _OcclusionMap
-        texture: {fileID: -4103488929555093536, guid: c95096ea91bcab04b8ee127a6450b252,
+        texture: {fileID: 3308910113001723834, guid: c95096ea91bcab04b8ee127a6450b252,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _SpecGlossMap
-        texture: {fileID: -9222828813323352973, guid: c95096ea91bcab04b8ee127a6450b252,
+        texture: {fileID: 1976772296567554359, guid: c95096ea91bcab04b8ee127a6450b252,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -239,39 +239,39 @@ ScriptedImporter:
         from: 0
         to: 3
     textureParameters:
-    - textureName: Ancient Fantasy World Map - diffuse
+    - textureName: MAT_Head - diffuse
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Ancient Fantasy World Map - baseColor
+    - textureName: MAT_Head - baseColor
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Ancient Fantasy World Map - normal
+    - textureName: MAT_Head - normal
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Ancient Fantasy World Map - specular
+    - textureName: MAT_Head - specular
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Ancient Fantasy World Map - glossiness
+    - textureName: MAT_Head - glossiness
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Ancient Fantasy World Map - roughness
+    - textureName: MAT_Head - roughness
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Ancient Fantasy World Map - metallic
+    - textureName: MAT_Head - metallic
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Ancient Fantasy World Map - height
+    - textureName: MAT_Head - height
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Ancient Fantasy World Map - ambientOcclusion
+    - textureName: MAT_Head - ambientOcclusion
       wrapMode: 0
       filterMode: 1
       aniso: 1
@@ -286,11 +286,11 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    material: {fileID: 7580940122526908561, guid: c95096ea91bcab04b8ee127a6450b252,
+    material: {fileID: -6412759424839502240, guid: c95096ea91bcab04b8ee127a6450b252,
       type: 3}
     generatedTextures:
-    - {fileID: 5721057500706870076, guid: c95096ea91bcab04b8ee127a6450b252, type: 3}
-    - {fileID: 3904157650475733506, guid: c95096ea91bcab04b8ee127a6450b252, type: 3}
-    - {fileID: -9222828813323352973, guid: c95096ea91bcab04b8ee127a6450b252, type: 3}
-    - {fileID: -5332329006011277808, guid: c95096ea91bcab04b8ee127a6450b252, type: 3}
-    - {fileID: -4103488929555093536, guid: c95096ea91bcab04b8ee127a6450b252, type: 3}
+    - {fileID: -8852557729595465334, guid: c95096ea91bcab04b8ee127a6450b252, type: 3}
+    - {fileID: 5225050936072699605, guid: c95096ea91bcab04b8ee127a6450b252, type: 3}
+    - {fileID: 1976772296567554359, guid: c95096ea91bcab04b8ee127a6450b252, type: 3}
+    - {fileID: 1298622569032229741, guid: c95096ea91bcab04b8ee127a6450b252, type: 3}
+    - {fileID: 3308910113001723834, guid: c95096ea91bcab04b8ee127a6450b252, type: 3}
