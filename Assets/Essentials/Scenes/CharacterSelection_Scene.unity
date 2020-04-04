@@ -690,6 +690,7 @@ GameObject:
   - component: {fileID: 214134204}
   - component: {fileID: 214134203}
   - component: {fileID: 214134205}
+  - component: {fileID: 214134206}
   m_Layer: 5
   m_Name: Stats_player1
   m_TagString: Untagged
@@ -775,6 +776,25 @@ MonoBehaviour:
   _normalAttSlider: {fileID: 587531092}
   _heavyAttSlider: {fileID: 1613534987}
   _speedSlider: {fileID: 1965328264}
+--- !u!114 &214134206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214134201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dafec55c6aa249448b568a4329e17cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _amplitude: {x: 0, y: 0, z: 0}
+  _rotAmplitude: {x: 0.87, y: 0, z: 0.45}
+  _frequency: {x: 0, y: 0, z: 0}
+  _rotFrequency: {x: 1.49, y: 0, z: 1.49}
+  _scaling: {x: 0.05, y: 0.05, z: 0}
+  _scalingFrequency: {x: 2, y: 2, z: 0}
+  _offset: 0
 --- !u!1001 &260342183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1472,6 +1492,7 @@ GameObject:
   - component: {fileID: 595128968}
   - component: {fileID: 595128967}
   - component: {fileID: 595128966}
+  - component: {fileID: 595128969}
   m_Layer: 5
   m_Name: Stats_player2
   m_TagString: Untagged
@@ -1557,6 +1578,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595128964}
   m_CullTransparentMesh: 0
+--- !u!114 &595128969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595128964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dafec55c6aa249448b568a4329e17cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _amplitude: {x: 0, y: 0, z: 0}
+  _rotAmplitude: {x: 0.87, y: 0, z: 0.45}
+  _frequency: {x: 0, y: 0, z: 0}
+  _rotFrequency: {x: 1.49, y: 0, z: 1.49}
+  _scaling: {x: 0.05, y: 0.05, z: 0}
+  _scalingFrequency: {x: 2, y: 2, z: 0}
+  _offset: 0
 --- !u!114 &776296416 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4808966630593041773, guid: b8a623da1cd58a8448682516c2093606,
@@ -4576,6 +4616,11 @@ PrefabInstance:
       propertyPath: _maxVolume
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 1388614021995231900, guid: bb5ba3c87273a6f42814a89c3c3e91ad,
+        type: 3}
+      propertyPath: _clips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d148cd0547ec2d42a18e425cf0ad85c, type: 3}
     - target: {fileID: 6262877925154836204, guid: bb5ba3c87273a6f42814a89c3c3e91ad,
         type: 3}
       propertyPath: m_LocalPosition.x
