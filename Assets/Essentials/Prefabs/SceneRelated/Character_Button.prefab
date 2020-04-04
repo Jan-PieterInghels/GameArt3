@@ -89,6 +89,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a84a86433e07445a22674b75d24132, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChooseCharacters: Choose character's
+  P1ChooseCharacter: P1 choose character
+  P2ChooseCharacter: P2 choose character
+  StartToPlay: Press start to play
   _image: {fileID: 5766093290431865766}
 --- !u!61 &2616700541708174010
 BoxCollider2D:

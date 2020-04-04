@@ -1724,6 +1724,7 @@ GameObject:
   - component: {fileID: 799111645}
   - component: {fileID: 799111644}
   - component: {fileID: 799111643}
+  - component: {fileID: 799111647}
   m_Layer: 5
   m_Name: Character select grid
   m_TagString: Untagged
@@ -1842,6 +1843,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799111641}
   m_CullTransparentMesh: 0
+--- !u!114 &799111647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799111641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dafec55c6aa249448b568a4329e17cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _amplitude: {x: 1.48, y: 0.97, z: 0}
+  _rotAmplitude: {x: 4.35, y: 1.86, z: 0}
+  _frequency: {x: 3.35, y: 2.45, z: 0}
+  _rotFrequency: {x: 1.32, y: 1.44, z: 0}
+  _scaling: {x: 0, y: 0, z: 0}
+  _scalingFrequency: {x: 0, y: 0, z: 0}
+  _offset: 0
 --- !u!1 &827566214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,6 +1969,7 @@ GameObject:
   - component: {fileID: 1057657252}
   - component: {fileID: 1057657254}
   - component: {fileID: 1057657253}
+  - component: {fileID: 1057657256}
   m_Layer: 5
   m_Name: Image_VS
   m_TagString: Untagged
@@ -1965,14 +1986,14 @@ RectTransform:
   m_GameObject: {fileID: 1057657251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 4.866, y: 4.866, z: 4.866}
   m_Children: []
   m_Father: {fileID: 1668205369}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 350}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -179}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1057657253
@@ -2011,6 +2032,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057657251}
   m_CullTransparentMesh: 0
+--- !u!114 &1057657256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057657251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dafec55c6aa249448b568a4329e17cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _amplitude: {x: 0, y: 0, z: 0}
+  _rotAmplitude: {x: 0, y: 0, z: 10.06}
+  _frequency: {x: 1.38, y: 1.95, z: 1.43}
+  _rotFrequency: {x: 1.47, y: 0.63, z: 1.7}
+  _scaling: {x: 0.5, y: 0.5, z: 0}
+  _scalingFrequency: {x: 2.14, y: 2.05, z: 0}
+  _offset: 0
 --- !u!1001 &1074672672
 PrefabInstance:
   m_ObjectHideFlags: 0
