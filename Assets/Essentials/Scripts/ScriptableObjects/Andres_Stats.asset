@@ -19,7 +19,7 @@ MonoBehaviour:
   _normalAttackDamage: 29.1
   _heavyAttackDamage: 66.4
   _characterSpeed: 2
-  _timeUntilNextBlock: 2
+  _timeUntilNextBlock: 3
   _defence: 14
   _getHitNormal: {fileID: 8300000, guid: a287ceeaca61d724c99eb94649612ee5, type: 3}
   _getHitHeavy: {fileID: 8300000, guid: e953bdd598d14ca4e9592da3ca182748, type: 3}

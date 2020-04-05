@@ -15,12 +15,12 @@ MonoBehaviour:
   _playerPortret: {fileID: 4795392165956598984, guid: 788faced8b64b214a9fa9329bd4f0fa8,
     type: 3}
   _characterName: Billy
-  _health: 190
+  _health: 250
   _normalAttackDamage: 20
   _heavyAttackDamage: 65
   _characterSpeed: 1.6
-  _timeUntilNextBlock: 2
-  _defence: 15
+  _timeUntilNextBlock: 3
+  _defence: 20
   _getHitNormal: {fileID: 8300000, guid: 6321daf1a735bef4fb32b4c72decf311, type: 3}
   _getHitHeavy: {fileID: 8300000, guid: a6790a4ac0d4bfc45a8f2f3376883949, type: 3}
   _useHeavy: {fileID: 8300000, guid: bc863d45125ab624fbfe94c808049d39, type: 3}

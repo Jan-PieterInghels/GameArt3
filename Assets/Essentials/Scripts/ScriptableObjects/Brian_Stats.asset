@@ -15,11 +15,11 @@ MonoBehaviour:
   _playerPortret: {fileID: 6366867763842495747, guid: 788faced8b64b214a9fa9329bd4f0fa8,
     type: 3}
   _characterName: Brajoeji
-  _health: 150
+  _health: 185
   _normalAttackDamage: 28.6
   _heavyAttackDamage: 71.2
   _characterSpeed: 2
-  _timeUntilNextBlock: 2
+  _timeUntilNextBlock: 1
   _defence: 8
   _getHitNormal: {fileID: 8300000, guid: b424d9f21d24ef24ea3f3bb68f86123e, type: 3}
   _getHitHeavy: {fileID: 8300000, guid: 0a423e7dcbdb46349a6ba4d34b53cd73, type: 3}

@@ -15,11 +15,11 @@ MonoBehaviour:
   _playerPortret: {fileID: -6223844146392332124, guid: 788faced8b64b214a9fa9329bd4f0fa8,
     type: 3}
   _characterName: Jack
-  _health: 250
+  _health: 220
   _normalAttackDamage: 25
   _heavyAttackDamage: 100
   _characterSpeed: 2.5
-  _timeUntilNextBlock: 1
+  _timeUntilNextBlock: 2
   _defence: 4
   _getHitNormal: {fileID: 8300000, guid: ff69b76f551621442b627fc0f422be3a, type: 3}
   _getHitHeavy: {fileID: 8300000, guid: 205f77c11e53f2a43b27c0e7489829ac, type: 3}
