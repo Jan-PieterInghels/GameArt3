@@ -1113,7 +1113,7 @@ SkinnedMeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -8891552034800476465, guid: 927fe68b4db82ef4f8615583e99ac2a3, type: 3}
-  - {fileID: 4345675312915828770, guid: 0657a3a85facec840976cf00659b6073, type: 3}
+  - {fileID: 4345675312915828770, guid: 1f5165f2380f3b247ab6eb5f7a370771, type: 3}
   - {fileID: 4345675312915828770, guid: 0657a3a85facec840976cf00659b6073, type: 3}
   - {fileID: 2100000, guid: 423bb57c3af6736488620e82b0551e0a, type: 2}
   - {fileID: 2100000, guid: 98763dfe80e924640be168f9cb9708f0, type: 2}
@@ -1250,6 +1250,7 @@ MonoBehaviour:
   _floatingPoints: {fileID: 7632250155645166426, guid: 8295131836fdb8d4ebdf27bc4dbf6200,
     type: 3}
   _instantiationPointFloatingPoints: {fileID: 8514099059469696155}
+  HasDoneDamage: 0
 --- !u!82 &4275747067794644246
 AudioSource:
   m_ObjectHideFlags: 0

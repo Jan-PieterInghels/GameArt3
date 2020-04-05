@@ -248,6 +248,7 @@ MonoBehaviour:
   _floatingPoints: {fileID: 7632250155645166426, guid: 8295131836fdb8d4ebdf27bc4dbf6200,
     type: 3}
   _instantiationPointFloatingPoints: {fileID: 383707168902730649}
+  HasDoneDamage: 0
 --- !u!143 &263737585072459160
 CharacterController:
   m_ObjectHideFlags: 0
@@ -510,7 +511,7 @@ SkinnedMeshRenderer:
   - {fileID: 2100000, guid: 18b0c157a5d19b84db34ed3aaed89a19, type: 2}
   - {fileID: 2100000, guid: 835f3893c9f506f4999ab2304eca2981, type: 2}
   - {fileID: 2100000, guid: 8cd75a2e84ec59d45978f0b3af0d904e, type: 2}
-  - {fileID: 0}
+  - {fileID: 7580940122526908561, guid: 43847a7a3aec8114fb91328addf13067, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0657a3a85facec840976cf00659b6073
+guid: 1f5165f2380f3b247ab6eb5f7a370771
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -30,7 +30,7 @@ ScriptedImporter:
         scale: {x: 1.5, y: 1.5}
         offset: {x: 0, y: 0}
       - name: _BumpMap
-        texture: {fileID: 8262147356850552945, guid: 0657a3a85facec840976cf00659b6073,
+        texture: {fileID: 8262147356850552945, guid: 1f5165f2380f3b247ab6eb5f7a370771,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -39,22 +39,22 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MainTex
-        texture: {fileID: -5289541990199599914, guid: 0657a3a85facec840976cf00659b6073,
+        texture: {fileID: -5289541990199599914, guid: 1f5165f2380f3b247ab6eb5f7a370771,
           type: 3}
         scale: {x: 1.5, y: 1.5}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
-        texture: {fileID: 7273113130809079233, guid: 0657a3a85facec840976cf00659b6073,
+        texture: {fileID: 7273113130809079233, guid: 1f5165f2380f3b247ab6eb5f7a370771,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _OcclusionMap
-        texture: {fileID: 5513724806751609140, guid: 0657a3a85facec840976cf00659b6073,
+        texture: {fileID: 5513724806751609140, guid: 1f5165f2380f3b247ab6eb5f7a370771,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _SpecGlossMap
-        texture: {fileID: -4890415301682647148, guid: 0657a3a85facec840976cf00659b6073,
+        texture: {fileID: -4890415301682647148, guid: 1f5165f2380f3b247ab6eb5f7a370771,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -103,7 +103,7 @@ ScriptedImporter:
         float: 1
       colors:
       - name: _BaseColor
-        color: {r: 0.9905485, g: 0.8349056, b: 1, a: 1}
+        color: {r: 0.83314645, g: 0.5338644, b: 0.8773585, a: 1}
       - name: _Color
         color: {r: 1, g: 1, b: 1, a: 1}
       - name: _EmissionColor
@@ -286,11 +286,11 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    material: {fileID: 4345675312915828770, guid: 0657a3a85facec840976cf00659b6073,
+    material: {fileID: 4345675312915828770, guid: 1f5165f2380f3b247ab6eb5f7a370771,
       type: 3}
     generatedTextures:
-    - {fileID: -5289541990199599914, guid: 0657a3a85facec840976cf00659b6073, type: 3}
-    - {fileID: 8262147356850552945, guid: 0657a3a85facec840976cf00659b6073, type: 3}
-    - {fileID: -4890415301682647148, guid: 0657a3a85facec840976cf00659b6073, type: 3}
-    - {fileID: 7273113130809079233, guid: 0657a3a85facec840976cf00659b6073, type: 3}
-    - {fileID: 5513724806751609140, guid: 0657a3a85facec840976cf00659b6073, type: 3}
+    - {fileID: -5289541990199599914, guid: 1f5165f2380f3b247ab6eb5f7a370771, type: 3}
+    - {fileID: 8262147356850552945, guid: 1f5165f2380f3b247ab6eb5f7a370771, type: 3}
+    - {fileID: -4890415301682647148, guid: 1f5165f2380f3b247ab6eb5f7a370771, type: 3}
+    - {fileID: 7273113130809079233, guid: 1f5165f2380f3b247ab6eb5f7a370771, type: 3}
+    - {fileID: 5513724806751609140, guid: 1f5165f2380f3b247ab6eb5f7a370771, type: 3}
