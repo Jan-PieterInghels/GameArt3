@@ -688,6 +688,7 @@ MonoBehaviour:
   _floatingPoints: {fileID: 7632250155645166426, guid: 8295131836fdb8d4ebdf27bc4dbf6200,
     type: 3}
   _instantiationPointFloatingPoints: {fileID: 4338270518230571673}
+  HasDoneDamage: 0
 --- !u!143 &4237722604849382552
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2969,12 +2970,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 727fca8da3a969746b2a574b41abe773, type: 2}
+      objectReference: {fileID: 2100000, guid: afccd0d65c3eb18459de9605a535d358, type: 2}
     - target: {fileID: 6952734487080640632, guid: 26d5dbf4f2b637f479d5276b281abae2,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 727fca8da3a969746b2a574b41abe773, type: 2}
+      objectReference: {fileID: 2100000, guid: afccd0d65c3eb18459de9605a535d358, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26d5dbf4f2b637f479d5276b281abae2, type: 3}
 --- !u!4 &1867311387060356563 stripped
