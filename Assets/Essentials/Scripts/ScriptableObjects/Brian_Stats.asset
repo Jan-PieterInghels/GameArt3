@@ -21,9 +21,9 @@ MonoBehaviour:
   _characterSpeed: 2
   _timeUntilNextBlock: 2
   _defence: 8
-  _getHitNormal: {fileID: 8300000, guid: 22f6030d8331e824db3ef542948cc3e5, type: 3}
-  _getHitHeavy: {fileID: 8300000, guid: 22f6030d8331e824db3ef542948cc3e5, type: 3}
-  _useHeavy: {fileID: 8300000, guid: e579dbe973237f842882b8ef8d9db9c9, type: 3}
+  _getHitNormal: {fileID: 8300000, guid: b424d9f21d24ef24ea3f3bb68f86123e, type: 3}
+  _getHitHeavy: {fileID: 8300000, guid: 0a423e7dcbdb46349a6ba4d34b53cd73, type: 3}
+  _useHeavy: {fileID: 8300000, guid: 8129de4ebe1973a44bfdbf9ea719cbd2, type: 3}
   _narrator: {fileID: 8300000, guid: 8f5ca0c8aab484f438c87eba398feb7b, type: 3}
   _victory: {fileID: 8300000, guid: 20f48e1014a24044bb93a907b3cc0b5d, type: 3}
   _punchSwoosh: {fileID: 8300000, guid: 5a27275918d4c5c4d9a811fe8b6ff208, type: 3}
